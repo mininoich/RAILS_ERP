@@ -1,0 +1,8 @@
+<%= semantic_form_for @student do |form| %>
+	<%= form.inputs do %>
+		<%= form.input :name %>
+		<%= form.input :email %>
+		<%= form.input :password %>
+	<% end %>
+  <%= form.submit %>
+<% end %>

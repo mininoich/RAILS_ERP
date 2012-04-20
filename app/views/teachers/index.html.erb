@@ -1,0 +1,17 @@
+<h1>Teachers</h1>
+<table>
+	<thead>
+			<td>Name</td>
+			<td>Email</td>
+			<td>Action</td>
+	</thead>
+<% @teachers.each do |t| %>
+	<tr>
+		<td><%= t.user.name %></td>
+		<td><%= t.user.email %></td>
+		<td><%= link_to "Edit", [:edit, t] %></td>
+		<td><%= link_to 'Delete', t, :confirm => 'Are you sure ?', :method => :delete %></td>
+	</tr>
+<% end %>
+</table>
+<%= link_to "Add", :action => 'new' %>

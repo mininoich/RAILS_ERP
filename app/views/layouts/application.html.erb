@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ProjetERP</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<% if user_signed_in? %>
+		Vous êtes connecté
+		<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+	<% else %>
+		Vous n'êtes pas connecté
+	<% end %>
+	
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
+<%= yield %>
+
+</body>
+</html>
