@@ -1,9 +1,27 @@
-<%= semantic_form_for @teacher do |form| %>
-	<%= form.inputs do %>
-		<%= form.input :name %>
-		<%= form.input :email %>
-		<%= form.input :password %>
-		<%= form.input :subjects, :include_blank => false %>
+<%= form_for @teacher do |form| %>
+	<p>
+		<%= form.label :name %>
+		<%= form.text_field :name %>
+	</p>
+	<p>
+		<%= form.label :email %>
+		<%= form.text_field :email %>
+	</p>
+	<% if !@new.blank? %>
+		<p>
+			<%= form.label :password %>
+			<%= form.password_field :password %>
+		</p>
 	<% end %>
-  <%= form.submit %>
+	<p>
+		<ul>
+			<% @subjects.each do |s| %>
+				<li>
+					<%= check_box_tag 'subject_ids[]', s.id, (checked = true if form.object.subject_ids.include?(s.id)) %>
+					<%= s.name %>
+				</li>
+			<% end %>
+		</ul>
+	</p>
+	<%= form.submit %>
 <% end %>

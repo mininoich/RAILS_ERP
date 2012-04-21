@@ -15,8 +15,9 @@ class TeachersController < ApplicationController
   end
   
   def new
+    @new = true
     @teacher = Teacher.new
-
+    @subjects = Subject.all
     respond_to do |format|
       format.html # new.html.erb
       format.json { render :json => @teacher }
@@ -24,19 +25,26 @@ class TeachersController < ApplicationController
   end
   
   def edit
+      @subjects = Subject.all
       @teacher = Teacher.find(params[:id])
       @teacher.name = @teacher.user.name
       @teacher.email = @teacher.user.email
+      @teacher.password = @teacher.user.password
   end
 
   def create
     @user = User.new(:name => params[:teacher][:name], :email => params[:teacher][:email], :password => params[:teacher][:password], :password_confirmation => params[:teacher][:password]) 
+    
     if @user.save 
       @teacher = @user.teachers.build
-      @subjects = Subject.find(params[:subjects])
-      #@teacher.subjects = @subjects
+      @teacher.name = @teacher.user.name
+      @teacher.email = @teacher.user.email
+      #@subjects = Subject.find(params[:subject_ids])
       respond_to do |format|
         if @teacher.save
+          params[:subject_ids].each do |id|
+            @teacher.abilities.create(:subject_id => id)
+          end
           format.html { redirect_to @teacher, :notice => 'Teacher was successfully created.' }
           format.json { render :json => @teacher, :status=> :created, :location => @teacher }
         else
@@ -45,8 +53,10 @@ class TeachersController < ApplicationController
         end
       end
     else  
-      format.html { render :action => "new" }
-      format.json { render :json => @teacher.errors, :status => :unprocessable_entity }
+      respond_to do |format|
+        format.html { render :action => "new" }
+        format.json { render :json => @teacher.errors, :status => :unprocessable_entity }
+      end
     end
   end
   
@@ -54,7 +64,11 @@ class TeachersController < ApplicationController
     @teacher = Teacher.find(params[:id])
     
     respond_to do |format|
-      if  @teacher.user.update_attributes(:name => params[:teacher][:name]) && @teacher.update_attributes(params[:teacher])
+      if  @teacher.user.update_attributes(:name => params[:teacher][:name], :email => params[:teacher][:email]) && @teacher.update_attributes(params[:teacher])
+        @teacher.abilities.destroy_all
+        params[:subject_ids].each do |id|
+          @teacher.abilities.create(:subject_id => id)
+        end
         format.html { redirect_to @teacher, :notice => 'Teacher was successfully updated.' }
         format.json { render :json => @teacher, :status => :created, :location => @teacher }
       else
