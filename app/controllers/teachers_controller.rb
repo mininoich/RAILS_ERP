@@ -1,6 +1,6 @@
 class TeachersController < ApplicationController
-  before_filter :authenticate_user!, :only => [:new, :create, :edit, :update, :destroy]
-  
+  before_filter :authenticate_user!, :only => [:index, :show]
+  before_filter :authenticate_admin!, :only => [:new, :create, :edit, :update, :destroy]
   def index
     @teachers = Teacher.all
   end
@@ -39,7 +39,6 @@ class TeachersController < ApplicationController
       @teacher = @user.teachers.build
       @teacher.name = @teacher.user.name
       @teacher.email = @teacher.user.email
-      #@subjects = Subject.find(params[:subject_ids])
       respond_to do |format|
         if @teacher.save
           params[:subject_ids].each do |id|
@@ -62,7 +61,6 @@ class TeachersController < ApplicationController
   
   def update
     @teacher = Teacher.find(params[:id])
-    
     respond_to do |format|
       if  @teacher.user.update_attributes(:name => params[:teacher][:name], :email => params[:teacher][:email]) && @teacher.update_attributes(params[:teacher])
         @teacher.abilities.destroy_all

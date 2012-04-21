@@ -8,10 +8,13 @@
 </head>
 <body>
 	<% if user_signed_in? %>
-		Vous êtes connecté
+		Signed in (<%= current_user.email %>)
 		<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
 	<% else %>
-		Vous n'êtes pas connecté
+		Not signed in
+	<% end %>
+	<% if admin_signed_in? %>
+	You are an Admin
 	<% end %>
 	
 	<p class="notice"><%= notice %></p>

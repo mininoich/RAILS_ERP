@@ -3,12 +3,13 @@
 	<thead>
 			<td>Name</td>
 			<td>Email</td>
-			<td>Action</td>
+			<td colspan="3">Action</td>
 	</thead>
 <% @students.each do |s| %>
 	<tr>
 		<td><%= s.user.name %></td>
 		<td><%= s.user.email %></td>
+		<td><%= link_to "Show", s %></td>
 		<td><%= link_to "Edit", [:edit, s] %></td>
 		<td><%= link_to 'Delete', s, :confirm => 'Are you sure ?', :method => :delete %></td>
 	</tr>
