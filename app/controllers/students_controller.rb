@@ -65,10 +65,7 @@ class StudentsController < ApplicationController
   end
   
    def destroy
-    @student = Student.find(params[:id])
-    @user = @student.user
-    @student.destroy
-    @user.destroy
+    Student.find(params[:id]).user.destroy
 
     respond_to do |format|
       format.html { redirect_to students_url }

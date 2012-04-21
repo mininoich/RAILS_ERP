@@ -1,6 +1,7 @@
-<%= semantic_form_for @subject do |form| %>
-	<%= form.inputs do %>
-		<%= form.input :name %>
-	<% end %>
-  <%= form.submit %>
+<%= form_for @subject do |form| %>
+	<p>
+		<%= form.label :name %>
+		<%= form.text_field :name %>
+	</p>
+	<%= form.submit %>
 <% end %>

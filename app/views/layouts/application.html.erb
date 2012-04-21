@@ -8,13 +8,19 @@
 </head>
 <body>
 	<% if user_signed_in? %>
-		Signed in (<%= current_user.email %>)
+		Signed in (<%= current_user.email %>) | 
 		<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-	<% else %>
-		Not signed in
-	<% end %>
-	<% if admin_signed_in? %>
-	You are an Admin
+		<hr />
+		<div>
+			Menu : 
+			<%= link_to 'Students', students_path %>
+			 | 
+			<%= link_to 'Teachers', teachers_path %>
+			<% if admin_signed_in? %>
+				 | 
+				<%= link_to 'Subjects', subjects_path %>
+			<% end %>
+		</div>
 	<% end %>
 	
 	<p class="notice"><%= notice %></p>

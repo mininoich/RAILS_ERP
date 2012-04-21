@@ -41,8 +41,10 @@ class TeachersController < ApplicationController
       @teacher.email = @teacher.user.email
       respond_to do |format|
         if @teacher.save
-          params[:subject_ids].each do |id|
-            @teacher.abilities.create(:subject_id => id)
+          if !params[:subject_ids].blank?
+            params[:subject_ids].each do |id|
+              @teacher.abilities.create(:subject_id => id)
+            end
           end
           format.html { redirect_to @teacher, :notice => 'Teacher was successfully created.' }
           format.json { render :json => @teacher, :status=> :created, :location => @teacher }
@@ -77,10 +79,7 @@ class TeachersController < ApplicationController
   end
   
    def destroy
-    @teacher = Teacher.find(params[:id])
-    @user = @teacher.user
-    @teacher.destroy
-    @user.destroy
+    Teacher.find(params[:id]).user.destroy
 
     respond_to do |format|
       format.html { redirect_to teachers_url }

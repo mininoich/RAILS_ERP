@@ -9,9 +9,13 @@
 	<tr>
 		<td><%= t.user.name %></td>
 		<td><%= t.user.email %></td>
-		<td><%= link_to "Show", t %></td>
-		<td><%= link_to "Edit", [:edit, t] %></td>
-		<td><%= link_to 'Delete', t, :confirm => 'Are you sure ?', :method => :delete %></td>
+		<td>
+			<%= link_to "Show", t %>
+			<% if admin_signed_in? %>
+				<%= link_to "Edit", [:edit, t] %></td>
+				<%= link_to 'Delete', t, :confirm => 'Are you sure ?', :method => :delete %>
+			<% end %>
+		</td>
 	</tr>
 <% end %>
 </table>
