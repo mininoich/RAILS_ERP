@@ -1,5 +1,5 @@
 class SubjectsController < ApplicationController
-  before_filter :authenticate_user!, :only => [:new, :create, :edit, :update, :destroy]
+  before_filter :authenticate_admin!
   
   def index
     @subjects = Subject.all

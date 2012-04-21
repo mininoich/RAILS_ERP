@@ -1,8 +1,17 @@
-<%= semantic_form_for @student do |form| %>
-	<%= form.inputs do %>
-		<%= form.input :name %>
-		<%= form.input :email %>
-		<%= form.input :password %>
+<%= form_for @student do |form| %>
+	<p>
+		<%= form.label :name %>
+		<%= form.text_field :name %>
+	</p>
+	<p>
+		<%= form.label :email %>
+		<%= form.text_field :email %>
+	</p>
+	<% if !@new.blank? %>
+		<p>
+			<%= form.label :password %>
+			<%= form.password_field :password %>
+		</p>
 	<% end %>
-  <%= form.submit %>
+	<%= form.submit %>
 <% end %>

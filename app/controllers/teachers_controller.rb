@@ -1,6 +1,6 @@
 class TeachersController < ApplicationController
-  before_filter :authenticate_user!, :only => [:new, :create, :edit, :update, :destroy]
-  
+  before_filter :authenticate_user!, :only => [:index, :show]
+  before_filter :authenticate_admin!, :only => [:new, :create, :edit, :update, :destroy]
   def index
     @teachers = Teacher.all
   end
@@ -39,11 +39,12 @@ class TeachersController < ApplicationController
       @teacher = @user.teachers.build
       @teacher.name = @teacher.user.name
       @teacher.email = @teacher.user.email
-      #@subjects = Subject.find(params[:subject_ids])
       respond_to do |format|
         if @teacher.save
-          params[:subject_ids].each do |id|
-            @teacher.abilities.create(:subject_id => id)
+          if !params[:subject_ids].blank?
+            params[:subject_ids].each do |id|
+              @teacher.abilities.create(:subject_id => id)
+            end
           end
           format.html { redirect_to @teacher, :notice => 'Teacher was successfully created.' }
           format.json { render :json => @teacher, :status=> :created, :location => @teacher }
@@ -62,7 +63,6 @@ class TeachersController < ApplicationController
   
   def update
     @teacher = Teacher.find(params[:id])
-    
     respond_to do |format|
       if  @teacher.user.update_attributes(:name => params[:teacher][:name], :email => params[:teacher][:email]) && @teacher.update_attributes(params[:teacher])
         @teacher.abilities.destroy_all
@@ -79,10 +79,7 @@ class TeachersController < ApplicationController
   end
   
    def destroy
-    @teacher = Teacher.find(params[:id])
-    @user = @teacher.user
-    @teacher.destroy
-    @user.destroy
+    Teacher.find(params[:id]).user.destroy
 
     respond_to do |format|
       format.html { redirect_to teachers_url }

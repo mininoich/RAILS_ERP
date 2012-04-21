@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
   attr_accessible :name
-  has_many :students
-  has_many :teachers
+  has_many :students, :dependent => :delete_all #ON DELETE CASCADE
+  has_many :teachers, :dependent => :delete_all #ON DELETE CASCADE
+  has_many :admins, :dependent => :delete_all #ON DELETE CASCADE
 end
