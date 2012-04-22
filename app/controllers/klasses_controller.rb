@@ -31,7 +31,7 @@ class KlassesController < ApplicationController
     @klass = Klass.new(params[:klass]) 
     respond_to do |format|
       if @klass.save
-        format.html { redirect_to @klass, :notice => 'Class was successfully created.' }
+        format.html { redirect_to @klass, :notice => 'Class was successfully created..' }
         format.json { render :json => @klass, :status=> :created, :location => @klass }
       else          
         format.html { render :action => "new" }            
