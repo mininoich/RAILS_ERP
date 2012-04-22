@@ -9740,3 +9740,159 @@ Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 14:51:03 +0200
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-22 17:23:29 +0200
+Processing by StudentsController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-04-22 17:23:29 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/jaouad/.rvm/gems/ruby-1.9.2-p290/gems/devise-2.0.4/app/views/devise/_links.erb (0.9ms)
+  Rendered /Users/jaouad/.rvm/gems/ruby-1.9.2-p290/gems/devise-2.0.4/app/views/devise/sessions/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 17:23:29 +0200
+Served asset /application.css - 200 OK (9ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 17:23:29 +0200
+Served asset /students.css - 200 OK (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 17:23:29 +0200
+Served asset /teachers.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 17:23:29 +0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 17:23:29 +0200
+Served asset /subjects.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 17:23:29 +0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 17:23:29 +0200
+Served asset /subjects.js - 200 OK (1ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 17:23:29 +0200
+Served asset /students.js - 200 OK (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 17:23:29 +0200
+Served asset /teachers.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 17:23:29 +0200
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-22 18:32:26 +0200
+Processing by StudentsController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-04-22 18:32:26 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/jaouad/.rvm/gems/ruby-1.9.2-p290/gems/devise-2.0.4/app/views/devise/_links.erb (0.7ms)
+  Rendered /Users/jaouad/.rvm/gems/ruby-1.9.2-p290/gems/devise-2.0.4/app/views/devise/sessions/new.html.erb within layouts/application (60.3ms)
+Completed 200 OK in 72ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 18:32:26 +0200
+Served asset /application.css - 200 OK (7ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 18:32:26 +0200
+Served asset /subjects.css - 200 OK (1ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 18:32:26 +0200
+Served asset /teachers.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 18:32:26 +0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 18:32:26 +0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 18:32:26 +0200
+Served asset /students.css - 200 OK (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 18:32:26 +0200
+Served asset /subjects.js - 200 OK (14ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 18:32:26 +0200
+Served asset /students.js - 200 OK (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 18:32:26 +0200
+Served asset /teachers.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 18:32:26 +0200
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-22 22:38:53 +0200
+Processing by StudentsController#index as HTML
+Completed 401 Unauthorized in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-04-22 22:38:53 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/jaouad/.rvm/gems/ruby-1.9.2-p290/gems/devise-2.0.4/app/views/devise/_links.erb (0.5ms)
+  Rendered /Users/jaouad/.rvm/gems/ruby-1.9.2-p290/gems/devise-2.0.4/app/views/devise/sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:38:53 +0200
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:38:53 +0200
+Served asset /subjects.css - 200 OK (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:38:53 +0200
+Served asset /teachers.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:38:53 +0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:38:53 +0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:38:53 +0200
+Served asset /students.css - 200 OK (2ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:38:53 +0200
+Served asset /students.js - 200 OK (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:38:53 +0200
+Served asset /subjects.js - 200 OK (51ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:38:53 +0200
+Served asset /teachers.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:38:53 +0200
+Served asset /application.js - 200 OK (0ms)
