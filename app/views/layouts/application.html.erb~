@@ -20,6 +20,10 @@
 				 | 
 				<%= link_to 'Subjects', subjects_path %>
 			<% end %>
+			 |
+			<%= link_to 'Companies', companies_path %> 
+			 |
+			<%= link_to 'Companies', contract_types_path %> 
 		</div>
 	<% end %>
 	

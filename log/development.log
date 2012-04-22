@@ -13878,3 +13878,4006 @@ Served asset /teachers.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 20:41:39 +0200
 Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2012-04-22 21:49:28 +0200
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered students/index.html.erb within layouts/application (72.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 326ms (Views: 185.2ms | ActiveRecord: 33.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:29 +0200
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:29 +0200
+Served asset /companies.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:29 +0200
+Served asset /students.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:29 +0200
+Served asset /subjects.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:29 +0200
+Served asset /teachers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:29 +0200
+Served asset /jquery.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:29 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:29 +0200
+Served asset /companies.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:29 +0200
+Served asset /students.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:29 +0200
+Served asset /subjects.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:29 +0200
+Served asset /teachers.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:29 +0200
+Served asset /application.js - 304 Not Modified (34ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2012-04-22 21:49:30 +0200
+Processing by TeachersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mTeacher Load (0.2ms)[0m  [1mSELECT "teachers".* FROM "teachers" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  Rendered teachers/index.html.erb within layouts/application (12.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 39ms (Views: 28.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:31 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:31 +0200
+Served asset /students.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:31 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:31 +0200
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:31 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:31 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:31 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:31 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:31 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:31 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:31 +0200
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:31 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2012-04-22 21:49:32 +0200
+Processing by SubjectsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  [1m[36mSubject Load (0.3ms)[0m  [1mSELECT "subjects".* FROM "subjects" [0m
+  Rendered subjects/index.html.erb within layouts/application (8.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 48ms (Views: 32.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:32 +0200
+Served asset /application.css - 304 Not Modified (77ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:32 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:32 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:32 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:32 +0200
+Served asset /companies.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:32 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:32 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:32 +0200
+Served asset /companies.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:32 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:32 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:32 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:32 +0200
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2012-04-22 21:49:35 +0200
+Processing by CompaniesController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" 
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered companies/index.html.erb within layouts/application (24.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 71ms (Views: 44.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:35 +0200
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:35 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:35 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:35 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:35 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:35 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:35 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:35 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:35 +0200
+Served asset /students.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:35 +0200
+Served asset /subjects.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:35 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:35 +0200
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/teachers" for 127.0.0.1 at 2012-04-22 21:49:36 +0200
+Processing by TeachersController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mTeacher Load (0.3ms)[0m  [1mSELECT "teachers".* FROM "teachers" [0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 LIMIT 1
+  [1m[36mAdmin Load (1.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  Rendered teachers/index.html.erb within layouts/application (7.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 40ms (Views: 34.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:36 +0200
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:37 +0200
+Served asset /companies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:37 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:37 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:37 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:37 +0200
+Served asset /subjects.css - 304 Not Modified (83ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:37 +0200
+Served asset /companies.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:37 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:37 +0200
+Served asset /students.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:37 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:37 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:37 +0200
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/students" for 127.0.0.1 at 2012-04-22 21:49:38 +0200
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" 
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mAdmin Load (8.7ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered students/index.html.erb within layouts/application (15.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 78ms (Views: 64.7ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:38 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:38 +0200
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:38 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:38 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:38 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:38 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:38 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:38 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:38 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:38 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:38 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:38 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2012-04-22 21:49:39 +0200
+Processing by SubjectsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT "subjects".* FROM "subjects" 
+  Rendered subjects/index.html.erb within layouts/application (6.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 23ms (Views: 19.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:39 +0200
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:39 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:39 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:39 +0200
+Served asset /subjects.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:39 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:39 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:39 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:39 +0200
+Served asset /companies.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:39 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:39 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:39 +0200
+Served asset /teachers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:39 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2012-04-22 21:49:42 +0200
+Processing by CompaniesController#index as HTML
+  [1m[35mUser Load (5.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT "companies".* FROM "companies" [0m
+  [1m[35mAdmin Load (0.4ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  Rendered companies/index.html.erb within layouts/application (89.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 123ms (Views: 114.1ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:43 +0200
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:43 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:43 +0200
+Served asset /students.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:43 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:43 +0200
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 21:49:43 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:43 +0200
+Served asset /students.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:43 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:43 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:43 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:43 +0200
+Served asset /teachers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 21:49:43 +0200
+Served asset /application.js - 304 Not Modified (11ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120418170931)
+Migrating to AddDeviseToUsers (20120418171204)
+Migrating to CreateStudents (20120418171225)
+Migrating to CreateTeachers (20120418171234)
+Migrating to CreateSubjects (20120418174022)
+Migrating to CreateAbilities (20120418190124)
+Migrating to CreateAdmins (20120421132703)
+Migrating to CreateCompanies (20120422165630)
+Migrating to CreateContractTypes (20120422195932)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "contract_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "libelle" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120422195932')[0m
+  [1m[35m (13.3ms)[0m  commit transaction
+  [1m[36m (0.7ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("abilities")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("admins")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_admins_on_user_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("companies")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("contract_types")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("students")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_students_on_user_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("subjects")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("teachers")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_teachers_on_user_id')
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+
+
+Started GET "/companies" for 127.0.0.1 at 2012-04-22 22:19:06 +0200
+Processing by CompaniesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mCompany Load (4.9ms)[0m  SELECT "companies".* FROM "companies" 
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered companies/index.html.erb within layouts/application (62.0ms)
+Compiled contract_types.css  (13ms)  (pid 7583)
+Compiled application.css  (31ms)  (pid 7583)
+Compiled contract_types.js  (179ms)  (pid 7583)
+Compiled application.js  (191ms)  (pid 7583)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 667ms (Views: 442.1ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:19:07 +0200
+Served asset /application.css - 304 Not Modified (33ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:19:07 +0200
+Served asset /contract_types.css - 200 OK (12ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:19:07 +0200
+Served asset /teachers.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:19:07 +0200
+Served asset /students.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:19:07 +0200
+Served asset /subjects.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:19:07 +0200
+Served asset /companies.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:19:07 +0200
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:19:07 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:19:07 +0200
+Served asset /companies.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:19:07 +0200
+Served asset /students.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:19:07 +0200
+Served asset /contract_types.js - 200 OK (5ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:19:07 +0200
+Served asset /subjects.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:19:07 +0200
+Served asset /teachers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:19:07 +0200
+Served asset /application.js - 304 Not Modified (113ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:19:09 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[35mUser Load (6.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+Completed 500 Internal Server Error in 15ms
+
+LoadError (Expected /home/thierry/INSIA/RAILS_ERP/app/models/contract_type.rb to define Contract_Type):
+  app/controllers/contract_types_controller.rb:5:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.9ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:23:58 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.2ms)[0m  SELECT "contract_types".* FROM "contract_types" 
+  Rendered contract_types/index.html.erb within layouts/application (1.6ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 219ms (Views: 140.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:23:58 +0200
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:23:58 +0200
+Served asset /contract_types.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:23:58 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:23:58 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:23:58 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:23:58 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:23:58 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:23:58 +0200
+Served asset /companies.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:23:58 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:23:58 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:23:58 +0200
+Served asset /teachers.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:23:58 +0200
+Served asset /subjects.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:23:58 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:23:58 +0200
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:24:03 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (0.2ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" [0m
+  Rendered contract_types/index.html.erb within layouts/application (0.8ms)
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 35ms (Views: 31.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:03 +0200
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:03 +0200
+Served asset /companies.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:03 +0200
+Served asset /subjects.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:03 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:03 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:03 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:03 +0200
+Served asset /jquery.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:03 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:03 +0200
+Served asset /companies.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:03 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:03 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:03 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:03 +0200
+Served asset /teachers.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:03 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:24:38 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.2ms)[0m  SELECT "contract_types".* FROM "contract_types" 
+  Rendered contract_types/index.html.erb within layouts/application (0.8ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 70ms (Views: 64.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:39 +0200
+Served asset /application.css - 304 Not Modified (93ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:39 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:39 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:39 +0200
+Served asset /subjects.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:39 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:39 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:39 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:39 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:39 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:39 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:39 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:39 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:39 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:39 +0200
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/contract_types/new" for 127.0.0.1 at 2012-04-22 22:24:43 +0200
+Processing by ContractTypesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  Rendered contract_types/_form.html.erb (8.4ms)
+  Rendered contract_types/new.html.erb within layouts/application (28.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 87ms (Views: 62.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:43 +0200
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:43 +0200
+Served asset /teachers.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:43 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:43 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:43 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:24:43 +0200
+Served asset /companies.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:43 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:43 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:43 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:43 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:43 +0200
+Served asset /students.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:43 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:43 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:24:43 +0200
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started POST "/contract_types" for 127.0.0.1 at 2012-04-22 22:24:51 +0200
+Processing by ContractTypesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtynqU1Us7Jx3jGOqIcJG3vvW9Ukthhyf3+iO0WxFgU=", "contract_type"=>{"libelle"=>"stage"}, "commit"=>"Create Contract type"}
+  [1m[36mUser Load (4.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (13.3ms)[0m  INSERT INTO "contract_types" ("created_at", "libelle", "updated_at") VALUES (?, ?, ?)  [["created_at", Sun, 22 Apr 2012 20:24:51 UTC +00:00], ["libelle", nil], ["updated_at", Sun, 22 Apr 2012 20:24:51 UTC +00:00]]
+  [1m[36m (6.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contract_types/1
+Completed 302 Found in 38ms (ActiveRecord: 24.7ms)
+
+
+Started GET "/contract_types/1" for 127.0.0.1 at 2012-04-22 22:24:51 +0200
+Processing by ContractTypesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (4.9ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered contract_types/show.html.erb within layouts/application (29.6ms)
+Completed 500 Internal Server Error in 46ms
+
+ActionView::Template::Error (undefined method `libille' for #<ContractType:0xacdbea0>):
+    1: <h1>Contract Type</h1>
+    2: Libelle : <%= @contracttype.libille %><br />
+    3: <br />
+    4: <%= link_to "Contract Types list", :action => 'index' %>
+  app/views/contract_types/show.html.erb:2:in `_app_views_contract_types_show_html_erb___1018908585_89796860'
+  app/controllers/contract_types_controller.rb:10:in `show'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (38.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (52.0ms)
+
+
+Started GET "/contract_types/1" for 127.0.0.1 at 2012-04-22 22:26:17 +0200
+Processing by ContractTypesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (7.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (0.2ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered contract_types/show.html.erb within layouts/application (2.3ms)
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 67ms (Views: 53.8ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:17 +0200
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:17 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:17 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:17 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:17 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:17 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:17 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:17 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:17 +0200
+Served asset /contract_types.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:17 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:17 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:17 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:17 +0200
+Served asset /teachers.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:17 +0200
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:26:23 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.4ms)[0m  SELECT "contract_types".* FROM "contract_types" 
+  [1m[36mAdmin Load (0.4ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  Rendered contract_types/index.html.erb within layouts/application (5.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 51ms (Views: 46.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:23 +0200
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:23 +0200
+Served asset /contract_types.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:23 +0200
+Served asset /students.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:23 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:23 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:23 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:23 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:23 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:24 +0200
+Served asset /companies.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:24 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:24 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:24 +0200
+Served asset /subjects.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:24 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:24 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/contract_types/1" for 127.0.0.1 at 2012-04-22 22:26:26 +0200
+Processing by ContractTypesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.2ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered contract_types/show.html.erb within layouts/application (0.9ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 125ms (Views: 120.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:27 +0200
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:27 +0200
+Served asset /companies.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:27 +0200
+Served asset /contract_types.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:27 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:27 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:27 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:27 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:27 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:27 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:27 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:27 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:27 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:27 +0200
+Served asset /students.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:27 +0200
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:26:29 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (0.3ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" [0m
+  [1m[35mAdmin Load (0.4ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered contract_types/index.html.erb within layouts/application (4.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 82ms (Views: 71.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:29 +0200
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:29 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:29 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:29 +0200
+Served asset /subjects.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:29 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:29 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:29 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:29 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:29 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:29 +0200
+Served asset /contract_types.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:29 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:29 +0200
+Served asset /students.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:29 +0200
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:29 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/contract_types/1/edit" for 127.0.0.1 at 2012-04-22 22:26:30 +0200
+Processing by ContractTypesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.4ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.3ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered contract_types/_form.html.erb (13.3ms)
+  Rendered contract_types/edit.html.erb within layouts/application (21.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 91ms (Views: 70.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:30 +0200
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:31 +0200
+Served asset /companies.css - 304 Not Modified (85ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:31 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:31 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:31 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:31 +0200
+Served asset /subjects.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:31 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:31 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:31 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:31 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:31 +0200
+Served asset /students.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:31 +0200
+Served asset /teachers.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:31 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:31 +0200
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started PUT "/contract_types/1" for 127.0.0.1 at 2012-04-22 22:26:36 +0200
+Processing by ContractTypesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtynqU1Us7Jx3jGOqIcJG3vvW9Ukthhyf3+iO0WxFgU=", "contract_type"=>{"libelle"=>"ttt"}, "commit"=>"Update Contract type", "id"=>"1"}
+  [1m[35mUser Load (9.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.1ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/contract_types/1
+Completed 302 Found in 17ms (ActiveRecord: 10.4ms)
+
+
+Started GET "/contract_types/1" for 127.0.0.1 at 2012-04-22 22:26:36 +0200
+Processing by ContractTypesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.1ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered contract_types/show.html.erb within layouts/application (0.5ms)
+  [1m[36mAdmin Load (0.8ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 21ms (Views: 17.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:36 +0200
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:36 +0200
+Served asset /contract_types.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:36 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:36 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:36 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:26:36 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:36 +0200
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:36 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:36 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:36 +0200
+Served asset /contract_types.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:36 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:36 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:36 +0200
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:26:36 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:27:22 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[35mUser Load (3.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (0.2ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" [0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered contract_types/index.html.erb within layouts/application (17.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 170ms (Views: 32.6ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:27:22 +0200
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:27:22 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:27:23 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:27:23 +0200
+Served asset /students.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:27:23 +0200
+Served asset /subjects.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:27:23 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:23 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:23 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:23 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:23 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:23 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:23 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:23 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:23 +0200
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/contract_types/1/edit" for 127.0.0.1 at 2012-04-22 22:27:25 +0200
+Processing by ContractTypesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (7.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.5ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered contract_types/_form.html.erb (14.6ms)
+  Rendered contract_types/edit.html.erb within layouts/application (27.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 76ms (Views: 57.0ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:27:25 +0200
+Served asset /application.css - 304 Not Modified (76ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:27:25 +0200
+Served asset /companies.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:27:25 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:27:25 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:27:25 +0200
+Served asset /subjects.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:27:25 +0200
+Served asset /teachers.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:25 +0200
+Served asset /companies.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:25 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:25 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:25 +0200
+Served asset /students.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:25 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:25 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:25 +0200
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:25 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started PUT "/contract_types/1" for 127.0.0.1 at 2012-04-22 22:27:31 +0200
+Processing by ContractTypesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtynqU1Us7Jx3jGOqIcJG3vvW9Ukthhyf3+iO0WxFgU=", "contract_type"=>{"libelle"=>"stage"}, "commit"=>"Update Contract type", "id"=>"1"}
+  [1m[35mUser Load (9.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.6ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/contract_types/1
+Completed 302 Found in 22ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/contract_types/1" for 127.0.0.1 at 2012-04-22 22:27:31 +0200
+Processing by ContractTypesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.5ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered contract_types/show.html.erb within layouts/application (0.9ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 22ms (Views: 17.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:27:31 +0200
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:27:31 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:27:31 +0200
+Served asset /companies.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:27:31 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:27:31 +0200
+Served asset /subjects.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:27:31 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:31 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:31 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:31 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:31 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:31 +0200
+Served asset /companies.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:31 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:31 +0200
+Served asset /teachers.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:27:31 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:28:20 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (0.1ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" [0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered contract_types/index.html.erb within layouts/application (20.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 222ms (Views: 56.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:21 +0200
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:21 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:21 +0200
+Served asset /contract_types.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:21 +0200
+Served asset /students.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:21 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:21 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:21 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:21 +0200
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:21 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:21 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:21 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:21 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:21 +0200
+Served asset /teachers.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:21 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/contract_types/1/edit" for 127.0.0.1 at 2012-04-22 22:28:23 +0200
+Processing by ContractTypesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (3.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.3ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered contract_types/_form.html.erb (2.9ms)
+  Rendered contract_types/edit.html.erb within layouts/application (15.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 37ms (Views: 30.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:24 +0200
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:24 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:24 +0200
+Served asset /subjects.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:24 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:24 +0200
+Served asset /contract_types.css - 304 Not Modified (94ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:24 +0200
+Served asset /teachers.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:24 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:24 +0200
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:24 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:24 +0200
+Served asset /companies.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:24 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:24 +0200
+Served asset /subjects.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:24 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:24 +0200
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started PUT "/contract_types/1" for 127.0.0.1 at 2012-04-22 22:28:27 +0200
+Processing by ContractTypesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtynqU1Us7Jx3jGOqIcJG3vvW9Ukthhyf3+iO0WxFgU=", "contract_type"=>{"libelle"=>"stage"}, "commit"=>"Update Contract type", "id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.3ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/contract_types/1
+Completed 302 Found in 32ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/contract_types/1" for 127.0.0.1 at 2012-04-22 22:28:27 +0200
+Processing by ContractTypesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.5ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered contract_types/show.html.erb within layouts/application (0.6ms)
+  [1m[36mAdmin Load (0.5ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 22ms (Views: 17.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:27 +0200
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:27 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:27 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:27 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:27 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:27 +0200
+Served asset /teachers.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:27 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:27 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:27 +0200
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:27 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:27 +0200
+Served asset /students.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:27 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:27 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:27 +0200
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:28:28 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (0.1ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" [0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered contract_types/index.html.erb within layouts/application (6.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 45ms (Views: 42.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:29 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:29 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:29 +0200
+Served asset /contract_types.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:29 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:29 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:29 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:29 +0200
+Served asset /companies.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:29 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:29 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:29 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:29 +0200
+Served asset /students.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:29 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:29 +0200
+Served asset /teachers.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:29 +0200
+Served asset /application.js - 304 Not Modified (118ms)
+
+
+Started GET "/contract_types/1/edit" for 127.0.0.1 at 2012-04-22 22:28:30 +0200
+Processing by ContractTypesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (7.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (4.5ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.2ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered contract_types/_form.html.erb (16.1ms)
+  Rendered contract_types/edit.html.erb within layouts/application (25.6ms)
+  [1m[36mCACHE (3.1ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 79ms (Views: 58.0ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:30 +0200
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:31 +0200
+Served asset /companies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:31 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:31 +0200
+Served asset /teachers.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:31 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:31 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:31 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:31 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:31 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:31 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:31 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:31 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:31 +0200
+Served asset /teachers.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:31 +0200
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started PUT "/contract_types/1" for 127.0.0.1 at 2012-04-22 22:28:34 +0200
+Processing by ContractTypesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtynqU1Us7Jx3jGOqIcJG3vvW9Ukthhyf3+iO0WxFgU=", "contract_type"=>{"libelle"=>"ttt"}, "commit"=>"Update Contract type", "id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (8.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.3ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/contract_types/1
+Completed 302 Found in 34ms (ActiveRecord: 9.3ms)
+
+
+Started GET "/contract_types/1" for 127.0.0.1 at 2012-04-22 22:28:34 +0200
+Processing by ContractTypesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.1ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered contract_types/show.html.erb within layouts/application (0.5ms)
+  [1m[36mAdmin Load (0.9ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 23ms (Views: 16.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:34 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:34 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:34 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:34 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:34 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:34 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:34 +0200
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:34 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:34 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:34 +0200
+Served asset /contract_types.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:34 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:34 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:34 +0200
+Served asset /teachers.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:34 +0200
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:28:36 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (0.2ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" [0m
+  [1m[35mAdmin Load (5.1ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered contract_types/index.html.erb within layouts/application (8.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 111ms (Views: 104.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:36 +0200
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:36 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:36 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:36 +0200
+Served asset /students.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:36 +0200
+Served asset /subjects.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:28:36 +0200
+Served asset /teachers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:36 +0200
+Served asset /companies.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:36 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:36 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:36 +0200
+Served asset /contract_types.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:36 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:36 +0200
+Served asset /students.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:36 +0200
+Served asset /teachers.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:28:36 +0200
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started DELETE "/contract_types/1" for 127.0.0.1 at 2012-04-22 22:30:05 +0200
+Processing by ContractTypesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MtynqU1Us7Jx3jGOqIcJG3vvW9Ukthhyf3+iO0WxFgU=", "id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.2ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "contract_types" WHERE "contract_types"."id" = ?  [["id", 1]]
+  [1m[36m (8.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/companies
+Completed 302 Found in 86ms (ActiveRecord: 12.1ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2012-04-22 22:30:05 +0200
+Processing by CompaniesController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" [0m
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  Rendered companies/index.html.erb within layouts/application (6.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 39ms (Views: 25.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:30:05 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:30:05 +0200
+Served asset /companies.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:30:05 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:30:05 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:30:05 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:30:05 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:30:05 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:30:05 +0200
+Served asset /students.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:30:05 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:30:05 +0200
+Served asset /contract_types.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:30:05 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:30:05 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:30:05 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:30:05 +0200
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:30:07 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (7.7ms)[0m  SELECT "contract_types".* FROM "contract_types" 
+  Rendered contract_types/index.html.erb within layouts/application (1.0ms)
+  [1m[36mAdmin Load (6.1ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 73ms (Views: 55.5ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:30:08 +0200
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:30:08 +0200
+Served asset /contract_types.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:30:08 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:30:08 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:30:08 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:30:08 +0200
+Served asset /companies.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:30:08 +0200
+Served asset /jquery.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:30:08 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:30:08 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:30:08 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:30:08 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:30:08 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:30:08 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:30:08 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/contract_types/new" for 127.0.0.1 at 2012-04-22 22:35:59 +0200
+Processing by ContractTypesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  Rendered contract_types/_form.html.erb (4.4ms)
+  Rendered contract_types/new.html.erb within layouts/application (5.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 113ms (Views: 22.3ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:35:59 +0200
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:35:59 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:35:59 +0200
+Served asset /contract_types.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:35:59 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:35:59 +0200
+Served asset /subjects.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:35:59 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:35:59 +0200
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:35:59 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:35:59 +0200
+Served asset /companies.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:35:59 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:35:59 +0200
+Served asset /students.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:35:59 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:35:59 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:35:59 +0200
+Served asset /application.js - 304 Not Modified (119ms)
+
+
+Started POST "/contract_types" for 127.0.0.1 at 2012-04-22 22:36:01 +0200
+Processing by ContractTypesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtynqU1Us7Jx3jGOqIcJG3vvW9Ukthhyf3+iO0WxFgU=", "contract_type"=>{"libelle"=>"xcwv"}, "commit"=>"Create Contract type"}
+  [1m[36mUser Load (4.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "contract_types" ("created_at", "libelle", "updated_at") VALUES (?, ?, ?)  [["created_at", Sun, 22 Apr 2012 20:36:01 UTC +00:00], ["libelle", nil], ["updated_at", Sun, 22 Apr 2012 20:36:01 UTC +00:00]]
+  [1m[36m (11.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contract_types/2
+Completed 302 Found in 47ms (ActiveRecord: 18.0ms)
+
+
+Started GET "/contract_types/2" for 127.0.0.1 at 2012-04-22 22:36:01 +0200
+Processing by ContractTypesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (0.2ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered contract_types/show.html.erb within layouts/application (3.5ms)
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 37ms (Views: 23.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:02 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:02 +0200
+Served asset /students.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:02 +0200
+Served asset /subjects.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:02 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:02 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:02 +0200
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:02 +0200
+Served asset /companies.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:02 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:02 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:02 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:02 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:02 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:02 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:02 +0200
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2012-04-22 22:36:09 +0200
+Processing by CompaniesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mCompany Load (0.3ms)[0m  SELECT "companies".* FROM "companies" 
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered companies/index.html.erb within layouts/application (6.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 58ms (Views: 23.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:09 +0200
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:09 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:09 +0200
+Served asset /contract_types.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:09 +0200
+Served asset /students.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:09 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:09 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:09 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:09 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:09 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:09 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:09 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:09 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:09 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:09 +0200
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:36:11 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[35mUser Load (5.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (0.3ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" [0m
+  [1m[35mAdmin Load (16.7ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered contract_types/index.html.erb within layouts/application (25.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 77ms (Views: 50.6ms | ActiveRecord: 22.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:11 +0200
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:11 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:11 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:11 +0200
+Served asset /teachers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:11 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:36:11 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:11 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:11 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:11 +0200
+Served asset /companies.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:11 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:11 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:12 +0200
+Served asset /subjects.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:12 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:36:12 +0200
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started DELETE "/contract_types/2" for 127.0.0.1 at 2012-04-22 22:36:16 +0200
+Processing by ContractTypesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MtynqU1Us7Jx3jGOqIcJG3vvW9Ukthhyf3+iO0WxFgU=", "id"=>"2"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.4ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (10.4ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "contract_types" WHERE "contract_types"."id" = ?  [["id", 2]]
+  [1m[36m (18.6ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 49ms
+
+NameError (undefined local variable or method `contracttypes_url' for #<ContractTypesController:0xb376b20>):
+  app/controllers/contract_types_controller.rb:59:in `block (2 levels) in destroy'
+  app/controllers/contract_types_controller.rb:58:in `destroy'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.8ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.5ms)
+
+
+Started DELETE "/contract_types/2" for 127.0.0.1 at 2012-04-22 22:36:54 +0200
+Processing by ContractTypesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MtynqU1Us7Jx3jGOqIcJG3vvW9Ukthhyf3+iO0WxFgU=", "id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.2ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "2"]]
+Completed 500 Internal Server Error in 153ms
+
+ActiveRecord::RecordNotFound (Couldn't find ContractType with id=2):
+  app/controllers/contract_types_controller.rb:56:in `destroy'
+
+
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.7ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:37:00 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.2ms)[0m  SELECT "contract_types".* FROM "contract_types" 
+  Rendered contract_types/index.html.erb within layouts/application (0.6ms)
+  [1m[36mAdmin Load (0.6ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 22ms (Views: 18.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:00 +0200
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:00 +0200
+Served asset /contract_types.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:00 +0200
+Served asset /students.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:00 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:00 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:00 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:00 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:00 +0200
+Served asset /companies.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:00 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:00 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:00 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:00 +0200
+Served asset /students.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:00 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:00 +0200
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/contract_types/new" for 127.0.0.1 at 2012-04-22 22:37:01 +0200
+Processing by ContractTypesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  Rendered contract_types/_form.html.erb (7.6ms)
+  Rendered contract_types/new.html.erb within layouts/application (11.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 68ms (Views: 42.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:02 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:02 +0200
+Served asset /companies.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:02 +0200
+Served asset /contract_types.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:02 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:02 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:02 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:02 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:02 +0200
+Served asset /jquery.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:02 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:02 +0200
+Served asset /companies.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:02 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:02 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:02 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:02 +0200
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started POST "/contract_types" for 127.0.0.1 at 2012-04-22 22:37:05 +0200
+Processing by ContractTypesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtynqU1Us7Jx3jGOqIcJG3vvW9Ukthhyf3+iO0WxFgU=", "contract_type"=>{"libelle"=>"dddd"}, "commit"=>"Create Contract type"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO "contract_types" ("created_at", "libelle", "updated_at") VALUES (?, ?, ?)  [["created_at", Sun, 22 Apr 2012 20:37:05 UTC +00:00], ["libelle", nil], ["updated_at", Sun, 22 Apr 2012 20:37:05 UTC +00:00]]
+  [1m[36m (10.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contract_types/3
+Completed 302 Found in 37ms (ActiveRecord: 15.1ms)
+
+
+Started GET "/contract_types/3" for 127.0.0.1 at 2012-04-22 22:37:05 +0200
+Processing by ContractTypesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (7.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (0.2ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered contract_types/show.html.erb within layouts/application (0.6ms)
+  [1m[35mAdmin Load (3.9ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 33ms (Views: 18.6ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:05 +0200
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:05 +0200
+Served asset /contract_types.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:05 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:05 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:05 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:05 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:05 +0200
+Served asset /students.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:05 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:05 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:05 +0200
+Served asset /contract_types.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:05 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:05 +0200
+Served asset /subjects.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:05 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:05 +0200
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:37:07 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.3ms)[0m  SELECT "contract_types".* FROM "contract_types" 
+  [1m[36mAdmin Load (0.4ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  Rendered contract_types/index.html.erb within layouts/application (11.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 85ms (Views: 81.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:07 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:07 +0200
+Served asset /contract_types.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:07 +0200
+Served asset /companies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:07 +0200
+Served asset /students.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:07 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:08 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:08 +0200
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:08 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:08 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:08 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:08 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:08 +0200
+Served asset /students.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:08 +0200
+Served asset /teachers.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:08 +0200
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2012-04-22 22:37:10 +0200
+Processing by CompaniesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mCompany Load (0.4ms)[0m  SELECT "companies".* FROM "companies" 
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered companies/index.html.erb within layouts/application (6.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 39ms (Views: 26.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:10 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:10 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:10 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:10 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:10 +0200
+Served asset /subjects.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:10 +0200
+Served asset /teachers.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:10 +0200
+Served asset /companies.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:10 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:10 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:10 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:10 +0200
+Served asset /students.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:10 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:10 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:10 +0200
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2012-04-22 22:37:11 +0200
+Processing by SubjectsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (4.8ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT "subjects".* FROM "subjects" 
+  Rendered subjects/index.html.erb within layouts/application (26.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 148ms (Views: 112.4ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:12 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:12 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:12 +0200
+Served asset /contract_types.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:12 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:12 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:12 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:12 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:12 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:12 +0200
+Served asset /companies.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:12 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:12 +0200
+Served asset /subjects.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:12 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:12 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:12 +0200
+Served asset /application.js - 304 Not Modified (17ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:37:13 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (0.3ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" [0m
+  [1m[35mAdmin Load (0.4ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered contract_types/index.html.erb within layouts/application (14.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 84ms (Views: 72.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:13 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:13 +0200
+Served asset /contract_types.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:13 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:13 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:13 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:13 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:13 +0200
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:13 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:13 +0200
+Served asset /companies.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:13 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:13 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:13 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:13 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:13 +0200
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started DELETE "/contract_types/3" for 127.0.0.1 at 2012-04-22 22:37:18 +0200
+Processing by ContractTypesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MtynqU1Us7Jx3jGOqIcJG3vvW9Ukthhyf3+iO0WxFgU=", "id"=>"3"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.2ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (10.9ms)[0m  DELETE FROM "contract_types" WHERE "contract_types"."id" = ?  [["id", 3]]
+  [1m[36m (14.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contract_types
+Completed 302 Found in 36ms (ActiveRecord: 26.3ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:37:18 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (0.3ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" [0m
+  Rendered contract_types/index.html.erb within layouts/application (0.5ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:18 +0200
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:18 +0200
+Served asset /contract_types.css - 304 Not Modified (88ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:18 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:18 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:18 +0200
+Served asset /teachers.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:18 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:18 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:18 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:18 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:18 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:18 +0200
+Served asset /students.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:18 +0200
+Served asset /subjects.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:18 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:18 +0200
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/contract_types/new" for 127.0.0.1 at 2012-04-22 22:37:20 +0200
+Processing by ContractTypesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered contract_types/_form.html.erb (2.5ms)
+  Rendered contract_types/new.html.erb within layouts/application (3.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:20 +0200
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:20 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:20 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:20 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:20 +0200
+Served asset /subjects.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:20 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:20 +0200
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:20 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:20 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:20 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:20 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:20 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:20 +0200
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:20 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started POST "/contract_types" for 127.0.0.1 at 2012-04-22 22:37:22 +0200
+Processing by ContractTypesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtynqU1Us7Jx3jGOqIcJG3vvW9Ukthhyf3+iO0WxFgU=", "contract_type"=>{"libelle"=>"dd"}, "commit"=>"Create Contract type"}
+  [1m[35mUser Load (11.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "contract_types" ("created_at", "libelle", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sun, 22 Apr 2012 20:37:22 UTC +00:00], ["libelle", nil], ["updated_at", Sun, 22 Apr 2012 20:37:22 UTC +00:00]]
+  [1m[35m (13.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/contract_types/4
+Completed 302 Found in 34ms (ActiveRecord: 25.7ms)
+
+
+Started GET "/contract_types/4" for 127.0.0.1 at 2012-04-22 22:37:22 +0200
+Processing by ContractTypesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.3ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "4"]]
+  Rendered contract_types/show.html.erb within layouts/application (0.5ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:22 +0200
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:22 +0200
+Served asset /teachers.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:22 +0200
+Served asset /subjects.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:22 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:22 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:22 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:22 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:22 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:22 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:22 +0200
+Served asset /companies.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:22 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:22 +0200
+Served asset /subjects.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:22 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:22 +0200
+Served asset /application.js - 304 Not Modified (121ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:37:27 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (0.3ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" [0m
+  [1m[35mAdmin Load (0.4ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered contract_types/index.html.erb within layouts/application (7.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 63ms (Views: 58.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:28 +0200
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:28 +0200
+Served asset /contract_types.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:28 +0200
+Served asset /students.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:28 +0200
+Served asset /subjects.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:28 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:28 +0200
+Served asset /companies.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:28 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:28 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:28 +0200
+Served asset /companies.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:28 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:28 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:28 +0200
+Served asset /subjects.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:28 +0200
+Served asset /teachers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:28 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/contract_types/new" for 127.0.0.1 at 2012-04-22 22:37:30 +0200
+Processing by ContractTypesController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.9ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  Rendered contract_types/_form.html.erb (5.1ms)
+  Rendered contract_types/new.html.erb within layouts/application (6.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 45ms (Views: 40.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:30 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:30 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:30 +0200
+Served asset /contract_types.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:30 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:30 +0200
+Served asset /teachers.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:30 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:30 +0200
+Served asset /contract_types.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:30 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:30 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:30 +0200
+Served asset /companies.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:30 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:30 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:30 +0200
+Served asset /teachers.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:30 +0200
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started POST "/contract_types" for 127.0.0.1 at 2012-04-22 22:37:35 +0200
+Processing by ContractTypesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtynqU1Us7Jx3jGOqIcJG3vvW9Ukthhyf3+iO0WxFgU=", "contract_type"=>{"libelle"=>"dddd"}, "commit"=>"Create Contract type"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mAdmin Load (5.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "contract_types" ("created_at", "libelle", "updated_at") VALUES (?, ?, ?)  [["created_at", Sun, 22 Apr 2012 20:37:35 UTC +00:00], ["libelle", nil], ["updated_at", Sun, 22 Apr 2012 20:37:35 UTC +00:00]]
+  [1m[36m (26.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contract_types/5
+Completed 302 Found in 40ms (ActiveRecord: 33.4ms)
+
+
+Started GET "/contract_types/5" for 127.0.0.1 at 2012-04-22 22:37:35 +0200
+Processing by ContractTypesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (6.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (0.2ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered contract_types/show.html.erb within layouts/application (0.6ms)
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 109ms (Views: 99.7ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:35 +0200
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:35 +0200
+Served asset /students.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:35 +0200
+Served asset /subjects.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:35 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:35 +0200
+Served asset /contract_types.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:35 +0200
+Served asset /companies.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:35 +0200
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:35 +0200
+Served asset /contract_types.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:35 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:35 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:35 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:35 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:35 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:35 +0200
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:37:39 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.3ms)[0m  SELECT "contract_types".* FROM "contract_types" 
+  [1m[36mAdmin Load (5.4ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered contract_types/index.html.erb within layouts/application (20.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 104ms (Views: 94.6ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:39 +0200
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:39 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:39 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:39 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:39 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:39 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:39 +0200
+Served asset /companies.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:39 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:39 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:39 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:39 +0200
+Served asset /students.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:39 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:39 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:39 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started DELETE "/contract_types/4" for 127.0.0.1 at 2012-04-22 22:37:42 +0200
+Processing by ContractTypesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MtynqU1Us7Jx3jGOqIcJG3vvW9Ukthhyf3+iO0WxFgU=", "id"=>"4"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (3.4ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (3.2ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "contract_types" WHERE "contract_types"."id" = ?  [["id", 4]]
+  [1m[36m (13.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contract_types
+Completed 302 Found in 31ms (ActiveRecord: 20.5ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:37:42 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (0.3ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" [0m
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered contract_types/index.html.erb within layouts/application (2.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 35ms (Views: 29.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:42 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:42 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:42 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:42 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:42 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:42 +0200
+Served asset /students.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:42 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:42 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:42 +0200
+Served asset /contract_types.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:42 +0200
+Served asset /students.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:42 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:42 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:42 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:42 +0200
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started DELETE "/contract_types/5" for 127.0.0.1 at 2012-04-22 22:37:44 +0200
+Processing by ContractTypesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MtynqU1Us7Jx3jGOqIcJG3vvW9Ukthhyf3+iO0WxFgU=", "id"=>"5"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.2ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (12.6ms)[0m  DELETE FROM "contract_types" WHERE "contract_types"."id" = ?  [["id", 5]]
+  [1m[36m (13.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contract_types
+Completed 302 Found in 33ms (ActiveRecord: 26.4ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:37:44 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (0.2ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" [0m
+  Rendered contract_types/index.html.erb within layouts/application (0.9ms)
+  [1m[35mAdmin Load (5.1ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 61ms (Views: 51.3ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:44 +0200
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:44 +0200
+Served asset /contract_types.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:45 +0200
+Served asset /companies.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:45 +0200
+Served asset /students.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:45 +0200
+Served asset /subjects.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:45 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:45 +0200
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:45 +0200
+Served asset /contract_types.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:45 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:37:45 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:45 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:45 +0200
+Served asset /subjects.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:45 +0200
+Served asset /teachers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:37:45 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/contract_types/new" for 127.0.0.1 at 2012-04-22 22:42:36 +0200
+Processing by ContractTypesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered contract_types/_form.html.erb (4.7ms)
+  Rendered contract_types/new.html.erb within layouts/application (6.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 167ms (Views: 31.8ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:37 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:37 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:37 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:37 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:37 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:37 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:37 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:37 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:37 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:37 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:37 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:37 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:37 +0200
+Served asset /teachers.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:37 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/contract_types" for 127.0.0.1 at 2012-04-22 22:42:39 +0200
+Processing by ContractTypesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtynqU1Us7Jx3jGOqIcJG3vvW9Ukthhyf3+iO0WxFgU=", "contract_type"=>{"libelle"=>"stage"}, "commit"=>"Create Contract type"}
+  [1m[35mUser Load (14.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "contract_types" ("created_at", "libelle", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Sun, 22 Apr 2012 20:42:39 UTC +00:00], ["libelle", "stage"], ["updated_at", Sun, 22 Apr 2012 20:42:39 UTC +00:00]]
+  [1m[35m (10.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/contract_types/6
+Completed 302 Found in 40ms (ActiveRecord: 26.6ms)
+
+
+Started GET "/contract_types/6" for 127.0.0.1 at 2012-04-22 22:42:39 +0200
+Processing by ContractTypesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.3ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1  [["id", "6"]]
+  Rendered contract_types/show.html.erb within layouts/application (1.1ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 22ms (Views: 18.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:40 +0200
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:40 +0200
+Served asset /contract_types.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:40 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:40 +0200
+Served asset /students.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:40 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:40 +0200
+Served asset /teachers.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:40 +0200
+Served asset /subjects.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:40 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:40 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:40 +0200
+Served asset /contract_types.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:40 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:40 +0200
+Served asset /teachers.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:40 +0200
+Served asset /subjects.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:40 +0200
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:42:52 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (0.5ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" [0m
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered contract_types/index.html.erb within layouts/application (4.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 23ms (Views: 19.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:52 +0200
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:52 +0200
+Served asset /contract_types.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:52 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:52 +0200
+Served asset /subjects.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:52 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:52 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:52 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:52 +0200
+Served asset /contract_types.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:52 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:52 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:52 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:52 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:52 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:52 +0200
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/contract_types/new" for 127.0.0.1 at 2012-04-22 22:42:57 +0200
+Processing by ContractTypesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  Rendered contract_types/_form.html.erb (2.8ms)
+  Rendered contract_types/new.html.erb within layouts/application (7.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 46ms (Views: 38.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:58 +0200
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:58 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:58 +0200
+Served asset /contract_types.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:58 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:58 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:42:58 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:58 +0200
+Served asset /jquery.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:58 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:58 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:58 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:58 +0200
+Served asset /students.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:58 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:58 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:42:58 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/contract_types" for 127.0.0.1 at 2012-04-22 22:43:26 +0200
+Processing by ContractTypesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtynqU1Us7Jx3jGOqIcJG3vvW9Ukthhyf3+iO0WxFgU=", "contract_type"=>{"libelle"=>"contrat pro"}, "commit"=>"Create Contract type"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mAdmin Load (0.4ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.2ms)[0m  INSERT INTO "contract_types" ("created_at", "libelle", "updated_at") VALUES (?, ?, ?)  [["created_at", Sun, 22 Apr 2012 20:43:26 UTC +00:00], ["libelle", "contrat pro"], ["updated_at", Sun, 22 Apr 2012 20:43:26 UTC +00:00]]
+  [1m[36m (20.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contract_types/7
+Completed 302 Found in 119ms (ActiveRecord: 28.6ms)
+
+
+Started GET "/contract_types/7" for 127.0.0.1 at 2012-04-22 22:43:26 +0200
+Processing by ContractTypesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1
+  [1m[36mContractType Load (3.5ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  Rendered contract_types/show.html.erb within layouts/application (0.6ms)
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+Completed 200 OK in 46ms (Views: 39.8ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:43:26 +0200
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:43:26 +0200
+Served asset /contract_types.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:43:26 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:43:26 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:43:26 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:43:26 +0200
+Served asset /companies.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:43:26 +0200
+Served asset /teachers.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:43:26 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:43:26 +0200
+Served asset /contract_types.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:43:26 +0200
+Served asset /companies.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:43:26 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:43:26 +0200
+Served asset /subjects.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:43:26 +0200
+Served asset /teachers.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:43:26 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-04-22 22:43:28 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 9 LIMIT 1[0m
+  [1m[35mContractType Load (0.2ms)[0m  SELECT "contract_types".* FROM "contract_types" 
+  [1m[36mAdmin Load (0.4ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1
+  Rendered contract_types/index.html.erb within layouts/application (9.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 9 LIMIT 1[0m
+Completed 200 OK in 61ms (Views: 58.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-22 22:43:28 +0200
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-04-22 22:43:28 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-22 22:43:29 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-22 22:43:29 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-22 22:43:29 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-04-22 22:43:29 +0200
+Served asset /companies.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-22 22:43:29 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-22 22:43:29 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-22 22:43:29 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-04-22 22:43:29 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-22 22:43:29 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-04-22 22:43:29 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-22 22:43:29 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-22 22:43:29 +0200
+Served asset /application.js - 304 Not Modified (2ms)
