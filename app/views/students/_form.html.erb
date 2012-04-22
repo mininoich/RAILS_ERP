@@ -13,9 +13,5 @@
 			<%= form.password_field :password %>
 		</p>
 	<% end %>
-	<p>
-		<%= form.label :klass %>
-		<%= form.collection_select :klass_id, Klass.all, :id, :name %>
-	</p>
 	<%= form.submit %>
 <% end %>
