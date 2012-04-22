@@ -1,5 +1,6 @@
 <h1>Student</h1>
-Nom : <%= @student.user.name %><br />
-Email : <%= @student.user.email %><br />
+<p>Name : <%= @student.user.name %></p>
+<p>Email : <%= @student.user.email %></p>
+<p>Class : <%= @student.klass.name %></p>
 <br />
 <%= link_to "Students list", :action => 'index' %>
