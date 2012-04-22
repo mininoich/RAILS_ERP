@@ -15,11 +15,7 @@ ProjetERP::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-<<<<<<< HEAD
-  resources :students, :teachers, :subjects
-=======
   resources :students, :teachers, :subjects, :klasses
->>>>>>> students_klasses
 
   # Sample resource route with options:
   #   resources :products do
