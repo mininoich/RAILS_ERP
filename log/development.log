@@ -9342,3 +9342,99 @@ Served asset /teachers.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-21 09:17:47 +0200
 Served asset /application.js - 304 Not Modified (0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120418170931)
+Migrating to AddDeviseToUsers (20120418171204)
+Migrating to CreateStudents (20120418171225)
+Migrating to CreateTeachers (20120418171234)
+Migrating to CreateSubjects (20120418174022)
+Migrating to CreateAbilities (20120418190124)
+Migrating to CreateAdmins (20120421132703)
+Migrating to CreateKlasses (20120422121219)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "klasses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120422121219')[0m
+  [1m[35m (2.5ms)[0m  commit transaction
+Migrating to AddKlassToStudent (20120422121509)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("students")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_students_on_user_id')[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_students_on_klass_id" ON "students" ("klass_id")
+SQLite3::SQLException: table students has no column named klass_id: CREATE  INDEX "index_students_on_klass_id" ON "students" ("klass_id")
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120418170931)
+Migrating to AddDeviseToUsers (20120418171204)
+Migrating to CreateStudents (20120418171225)
+Migrating to CreateTeachers (20120418171234)
+Migrating to CreateSubjects (20120418174022)
+Migrating to CreateAbilities (20120418190124)
+Migrating to CreateAdmins (20120421132703)
+Migrating to CreateKlasses (20120422121219)
+Migrating to AddKlassToStudent (20120422121509)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("students")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_students_on_user_id')[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_students_on_klass_id" ON "students" ("klass_id")
+SQLite3::SQLException: table students has no column named klass_id: CREATE  INDEX "index_students_on_klass_id" ON "students" ("klass_id")
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120418170931)
+Migrating to AddDeviseToUsers (20120418171204)
+Migrating to CreateStudents (20120418171225)
+Migrating to CreateTeachers (20120418171234)
+Migrating to CreateSubjects (20120418174022)
+Migrating to CreateAbilities (20120418190124)
+Migrating to CreateAdmins (20120421132703)
+Migrating to CreateKlasses (20120422121219)
+Migrating to AddKlassToStudent (20120422121509)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  ALTER TABLE "students" ADD "klass_id" integer
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("students")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_students_on_user_id')
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "index_students_on_klass_id" ON "students" ("klass_id")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120422121509')
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("abilities")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("admins")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_admins_on_user_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("klasses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("students")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_students_on_klass_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_students_on_user_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("subjects")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("teachers")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_teachers_on_user_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_reset_password_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_email')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120418170931)
+Migrating to AddDeviseToUsers (20120418171204)
+Migrating to CreateStudents (20120418171225)
+Migrating to CreateTeachers (20120418171234)
+Migrating to CreateSubjects (20120418174022)
+Migrating to CreateAbilities (20120418190124)
+Migrating to CreateAdmins (20120421132703)
+Migrating to CreateKlasses (20120422121219)
+Migrating to AddKlassToStudent (20120422121509)
+  [1m[35m (0.5ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("abilities")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("admins")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_admins_on_user_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("klasses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("students")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_students_on_klass_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_students_on_user_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("subjects")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("teachers")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_teachers_on_user_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_reset_password_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_email')
