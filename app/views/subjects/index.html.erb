@@ -7,8 +7,11 @@
 <% @subjects.each do |s| %>
 	<tr>
 		<td><%= s.name %></td>
-		<td><%= link_to "Edit", [:edit, s] %></td>
-		<td><%= link_to 'Delete', s, :confirm => 'Are you sure ?', :method => :delete %></td>
+		<td>
+			<%= link_to "Show", s %>
+			<%= link_to "Edit", [:edit, s] %>
+			<%= link_to 'Delete', s, :confirm => 'Are you sure ?', :method => :delete %>
+		</td>
 	</tr>
 <% end %>
 </table>

@@ -12,7 +12,7 @@
 		<td>
 			<%= link_to "Show", t %>
 			<% if admin_signed_in? %>
-				<%= link_to "Edit", [:edit, t] %></td>
+				<%= link_to "Edit", [:edit, t] %>
 				<%= link_to 'Delete', t, :confirm => 'Are you sure ?', :method => :delete %>
 			<% end %>
 		</td>
