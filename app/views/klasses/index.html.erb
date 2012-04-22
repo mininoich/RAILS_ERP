@@ -1,0 +1,19 @@
+<h1>Classes</h1>
+<table>
+	<thead>
+			<td>Name</td>
+			<td>Action</td>
+	</thead>
+	
+<% @klasses.each do |k| %>
+	<tr>
+		<td><%= k.name %></td>
+		<td>
+			<%= link_to "Show", k %>
+			<%= link_to "Edit", [:edit, k] %>
+			<%= link_to 'Delete', k, :confirm => 'Are you sure ?', :method => :delete %>
+		</td>
+	</tr>
+<% end %>
+</table>
+<%= link_to "Add", :action => 'new' %>
