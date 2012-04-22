@@ -20,8 +20,6 @@
 				 | 
 				<%= link_to 'Subjects', subjects_path %>
 			<% end %>
-			 |
-			<%= link_to 'Companies', companies_path %> 
 		</div>
 	<% end %>
 	

@@ -1,0 +1,15 @@
+<%= form_for @company do |form| %>
+	<p>
+		<%= form.label :name %>
+		<%= form.text_field :name %>
+	</p>
+	<p>
+		<%= form.label :ad_rue %>
+		<%= form.text_field :ad_rue %>
+	</p>
+	<p>
+		<%= form.label :ad_ville %>
+		<%= form.text_field :ad_ville %>
+	</p>
+	<%= form.submit %>
+<% end %>

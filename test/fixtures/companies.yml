@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  ad_rue: MyString
+  ad_ville: MyString
+
+two:
+  name: MyString
+  ad_rue: MyString
+  ad_ville: MyString
