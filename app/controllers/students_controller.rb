@@ -31,7 +31,7 @@ class StudentsController < ApplicationController
   def create
     @user = User.new(:name => params[:student][:name], :email => params[:student][:email], :password => params[:student][:password], :password_confirmation => params[:student][:password]) 
     if @user.save 
-      @student = @user.students.build
+      @student = @user.students.build(params[:student])
       @student.name = @student.user.name
       @student.email = @student.user.email
       respond_to do |format|
