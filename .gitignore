@@ -2,3 +2,5 @@
 log/development.log
 
 tmp/pids/server.pid
+
+tmp/pids/server.pid

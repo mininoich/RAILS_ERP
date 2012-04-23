@@ -9431,3 +9431,89 @@ Migrating to AddKlassToStudent (20120422121509)
   [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
 Binary data inserted for `string` type on column `encrypted_password`
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-23 20:22:29 +0200
+Processing by StudentsController#index as HTML
+Completed 401 Unauthorized in 49ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-04-23 20:22:29 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/Tony/.rvm/gems/ruby-1.9.3-p125/gems/devise-2.0.4/app/views/devise/_links.erb (2.2ms)
+  Rendered /Users/Tony/.rvm/gems/ruby-1.9.3-p125/gems/devise-2.0.4/app/views/devise/sessions/new.html.erb within layouts/application (51.5ms)
+Completed 200 OK in 251ms (Views: 177.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-23 20:22:29 +0200
+Served asset /teachers.css - 200 OK (2ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-23 20:22:29 +0200
+Served asset /students.css - 200 OK (1ms)
+
+
+Started GET "/assets/klasses.css?body=1" for 127.0.0.1 at 2012-04-23 20:22:29 +0200
+Served asset /klasses.css - 200 OK (3ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-23 20:22:29 +0200
+Served asset /subjects.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 20:22:29 +0200
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 20:22:29 +0200
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 20:22:29 +0200
+Served asset /jquery_ujs.js - 200 OK (9ms)
+
+
+Started GET "/assets/klasses.js?body=1" for 127.0.0.1 at 2012-04-23 20:22:29 +0200
+Served asset /klasses.js - 200 OK (1ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-23 20:22:29 +0200
+Served asset /students.js - 200 OK (2ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-23 20:22:29 +0200
+Served asset /subjects.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 20:22:29 +0200
+Served asset /application.js - 200 OK (8ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-23 20:22:29 +0200
+Served asset /teachers.js - 200 OK (1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-04-23 20:22:38 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"di0X8vLL5vDk5QH0D/rnXA7KNbzQhgYCaxdcl7nAO28=", "user"=>{"email"=>"admin@mail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'admin@mail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2012-04-22 15:37:35.953447', "current_sign_in_at" = '2012-04-23 18:22:38.635191', "sign_in_count" = 3, "updated_at" = '2012-04-23 18:22:38.636732' WHERE "users"."id" = 1[0m
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 324ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-23 20:22:38 +0200
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mAdmin Load (0.1ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+  Rendered students/index.html.erb within layouts/application (104.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1[0m
+Completed 200 OK in 191ms (Views: 180.3ms | ActiveRecord: 1.7ms)
