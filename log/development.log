@@ -9517,3 +9517,315 @@ Processing by StudentsController#index as HTML
   Rendered students/index.html.erb within layouts/application (104.7ms)
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1[0m
 Completed 200 OK in 191ms (Views: 180.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-23 20:31:57 +0200
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+  Rendered students/index.html.erb within layouts/application (56.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1[0m
+Completed 200 OK in 326ms (Views: 195.3ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-23 20:32:32 +0200
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students" [0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1[0m
+  Rendered students/index.html.erb within layouts/application (225950.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+Completed 200 OK in 225979ms (Views: 225973.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-23 20:36:18 +0200
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+  Rendered students/index.html.erb within layouts/application (22.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1[0m
+Completed 200 OK in 46ms (Views: 41.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-23 20:36:18 +0200
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1[0m
+  Rendered students/index.html.erb within layouts/application (17.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+Completed 200 OK in 40ms (Views: 35.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-23 20:36:18 +0200
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" 
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+  Rendered students/index.html.erb within layouts/application (17.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1[0m
+Completed 200 OK in 41ms (Views: 36.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 20:36:18 +0200
+Served asset /application.css - 304 Not Modified (75ms)
+
+
+Started GET "/assets/klasses.css?body=1" for 127.0.0.1 at 2012-04-23 20:36:19 +0200
+Served asset /klasses.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-23 20:36:19 +0200
+Served asset /teachers.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-23 20:36:19 +0200
+Served asset /students.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-23 20:36:19 +0200
+Served asset /subjects.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 20:36:19 +0200
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 20:36:19 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/klasses.js?body=1" for 127.0.0.1 at 2012-04-23 20:36:19 +0200
+Served asset /klasses.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-23 20:36:19 +0200
+Served asset /subjects.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-23 20:36:19 +0200
+Served asset /students.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-23 20:36:19 +0200
+Served asset /teachers.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 20:36:19 +0200
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-23 20:36:34 +0200
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1[0m
+  Rendered students/index.html.erb within layouts/application (17.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+Completed 200 OK in 39ms (Views: 34.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/klasses.css?body=1" for 127.0.0.1 at 2012-04-23 20:36:34 +0200
+Served asset /klasses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 20:36:34 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-23 20:36:35 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-23 20:36:35 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-23 20:36:35 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-23 20:36:35 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 20:36:35 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 20:36:35 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/klasses.js?body=1" for 127.0.0.1 at 2012-04-23 20:36:35 +0200
+Served asset /klasses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 20:36:35 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-23 20:36:35 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-23 20:36:35 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-23 20:42:51 +0200
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" 
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mAdmin Load (0.4ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+  Rendered students/index.html.erb within layouts/application (152290.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1[0m
+Completed 200 OK in 152312ms (Views: 152307.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/klasses.css?body=1" for 127.0.0.1 at 2012-04-23 20:45:23 +0200
+Served asset /klasses.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 20:45:23 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-23 20:45:23 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-23 20:45:23 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-23 20:45:23 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-23 20:45:23 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 20:45:23 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-23 20:45:23 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/klasses.js?body=1" for 127.0.0.1 at 2012-04-23 20:45:23 +0200
+Served asset /klasses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 20:45:23 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-23 20:45:23 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 20:45:23 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-23 20:52:11 +0200
+Processing by StudentsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students" [0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1[0m
+  Rendered students/index.html.erb within layouts/application (18.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 1 LIMIT 1
+Completed 200 OK in 41ms (Views: 36.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-23 20:52:12 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/klasses.css?body=1" for 127.0.0.1 at 2012-04-23 20:52:12 +0200
+Served asset /klasses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-23 20:52:12 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-23 20:52:12 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-23 20:52:12 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-23 20:52:12 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-23 20:52:12 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/klasses.js?body=1" for 127.0.0.1 at 2012-04-23 20:52:12 +0200
+Served asset /klasses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-23 20:52:12 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-23 20:52:12 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-23 20:52:12 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-23 20:52:12 +0200
+Served asset /application.js - 304 Not Modified (1ms)

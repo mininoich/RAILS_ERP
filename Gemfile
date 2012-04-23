@@ -10,6 +10,7 @@ gem 'sqlite3'
 gem 'json'
 gem 'devise'
 gem 'formtastic'
+gem 'debugger'
 
 
 
