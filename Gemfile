@@ -11,6 +11,7 @@ gem 'json'
 gem 'devise'
 gem 'formtastic'
 gem 'debugger'
+gem 'twitter-bootstrap-rails'
 
 
 

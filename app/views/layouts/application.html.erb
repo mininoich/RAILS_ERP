@@ -7,27 +7,41 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<% if user_signed_in? %>
-		Signed in (<%= current_user.email %>) | 
-		<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-		<hr />
-		<div>
-			Menu : 
-			<%= link_to 'Students', students_path %>
-			 | 
-			<%= link_to 'Teachers', teachers_path %>
-			<% if admin_signed_in? %>
-				 | 
-				<%= link_to 'Subjects', subjects_path %>
-				 | 
-				<%= link_to 'Classes', klasses_path %>
-			<% end %>
-		</div>
-	<% end %>
 	
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
-<%= yield %>
+		
+		
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <ul class="nav">
+				  <li class="active">
+				    <a href="#">INGESUP</a>
+				  </li>
+					<% if user_signed_in? %>
+				  	<li><%= link_to 'Students', students_path %></li>
+					  <li><%= link_to 'Teachers', teachers_path %></li>
+						<% if admin_signed_in? %>
+							<li><%= link_to 'Subjects', subjects_path %></li>
+							<li><%= link_to 'Classes', klasses_path %></li>
+						<% end %>
+					<% end %>
+				</ul>
+				<% if user_signed_in? %>
+				<ul class="nav pull-right">
+					<li><%= current_user.email %></li>
+					<li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+				</ul>
+				<% end %>
+	    </div>
+	  </div>
+	</div>
+		
+	<div class="container well maincontainer">
+		
+		<% if !notice.blank? %><p class="alert alert-success"><%= notice %></p><% end %>
+		<% if !alert.blank? %><p class="alert alert-error"><%= alert %></p><% end %>
+		<%= yield %>
+	</div>
 
 </body>
 </html>
