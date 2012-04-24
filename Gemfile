@@ -12,7 +12,8 @@ gem 'devise'
 gem 'formtastic'
 gem 'debugger'
 gem 'twitter-bootstrap-rails'
-
+gem 'simple-navigation'
+gem 'simple-navigation-bootstrap'
 
 
 # Gems used only for assets and not required
