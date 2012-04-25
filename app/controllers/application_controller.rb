@@ -17,6 +17,11 @@ class ApplicationController < ActionController::Base
   end
   helper_method :teacher_signed_in?
   
+  def supervisor_signed_in?
+    return user_signed_in? && !Supervisor.find_by_user_id(current_user.id).blank?
+  end
+  helper_method :supervisor_signed_in?
+  
   def authenticate_admin!
     if authenticate_user!
       if !Admin.find_by_user_id(current_user.id).blank?
@@ -50,5 +55,15 @@ class ApplicationController < ActionController::Base
   end
   helper_method :authenticate_teacher!
   
+  def authenticate_supervisor!
+    if authenticate_user!
+      if !Supervisor.find_by_user_id(current_user.id).blank?
+        return true
+      end
+    end
+    flash[:alert] = "Acces denied"
+    redirect_to root_url, :status => 401
+  end
+  helper_method :authenticate_supervisor!
   
 end
