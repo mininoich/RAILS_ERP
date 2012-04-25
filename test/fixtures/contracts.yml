@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date_debut: 2012-04-24 20:15:10
+  date_fin: 2012-04-24 20:15:10
+  company: 
+  contract_type: 
+
+two:
+  date_debut: 2012-04-24 20:15:10
+  date_fin: 2012-04-24 20:15:10
+  company: 
+  contract_type: 
