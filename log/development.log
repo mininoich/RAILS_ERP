@@ -28223,3 +28223,155 @@ Served asset /application.js - 304 Not Modified (4ms)
 
 Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-04-24 20:15:53 +0200
 Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-25 20:12:15 +0200
+Processing by StudentsController#index as HTML
+Completed 401 Unauthorized in 41ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-04-25 20:12:15 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/Tony/.rvm/gems/ruby-1.9.3-p125/gems/devise-2.0.4/app/views/devise/_links.erb (4.8ms)
+  Rendered /Users/Tony/.rvm/gems/ruby-1.9.3-p125/gems/devise-2.0.4/app/views/devise/sessions/new.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 657ms (Views: 520.0ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /subjects.css - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/klasses.css?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /klasses.css - 200 OK (3ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /teachers.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /jquery.js - 304 Not Modified (51ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /students.css - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (37ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/klasses.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /klasses.js - 304 Not Modified (59ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /students.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /subjects.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /teachers.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-04-25 20:12:16 +0200
+Served asset /application.js - 304 Not Modified (48ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120418170931)
+Migrating to AddDeviseToUsers (20120418171204)
+Migrating to CreateStudents (20120418171225)
+Migrating to CreateTeachers (20120418171234)
+Migrating to CreateSubjects (20120418174022)
+Migrating to CreateAbilities (20120418190124)
+Migrating to CreateAdmins (20120421132703)
+Migrating to CreateKlasses (20120422121219)
+Migrating to AddKlassToStudent (20120422121509)
+Migrating to CreateSupervisors (20120425181455)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "supervisors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (19.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120425181455')[0m
+  [1m[35m (15.0ms)[0m  commit transaction
+  [1m[36m (0.6ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("abilities")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("admins")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_admins_on_user_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("klasses")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("students")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_students_on_klass_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_students_on_user_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("subjects")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("supervisors")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("teachers")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_teachers_on_user_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_reset_password_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_email')

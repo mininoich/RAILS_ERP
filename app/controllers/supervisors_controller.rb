@@ -1,0 +1,2 @@
+class SupervisorsController < ApplicationController
+end
