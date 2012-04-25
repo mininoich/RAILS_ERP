@@ -34,6 +34,7 @@ SimpleNavigation::Configuration.run do |navigation|
   navigation.items do |primary|
     primary.item :students, 'Students', students_path, :if => Proc.new { user_signed_in? }
     primary.item :teachers, 'Teachers', teachers_path, :if => Proc.new { user_signed_in? }
+    primary.item :rooms, 'Rooms', rooms_path, :if => Proc.new { user_signed_in? }
     primary.item :subjects, 'Subjects', subjects_path, :if => Proc.new { admin_signed_in? }
     primary.item :klasses, 'Classes', klasses_path, :if => Proc.new { admin_signed_in? }
     

@@ -1,0 +1,23 @@
+<h1>Rooms</h1>
+<table class="table table-bordered table-condensed">
+	<thead>
+			<td>Name</td>
+			<td>Places number</td>
+			<td>Computers number</td>
+	</thead>
+<% @rooms.each do |s| %>
+	<tr>
+		<td><%= s.name %></td>
+		<td><%= s.nb_places %></td>
+		<td><%= s.nb_computers %></td>
+		<td>
+			<%= link_to "Show", s %>
+			<% #if admin_signed_in? %>
+				<%= link_to "Edit", [:edit, s] %>
+				<%= link_to 'Delete', s, :confirm => 'Are you sure ?', :method => :delete %>
+			<% #end %>
+		</td>
+	</tr>
+<% end %>
+</table>
+<%= link_to "Add", :action => 'new' %>
