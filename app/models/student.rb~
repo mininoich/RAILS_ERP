@@ -1,8 +1,10 @@
 class Student < ActiveRecord::Base
   attr_accessor :name, :email, :password
   attr_accessible :name, :email, :password
-  belongs_to :user
+  has_one :user
   
-  
+  def user_name
+    user.name
+  end
 
 end

@@ -1,8 +1,8 @@
 class Contract < ActiveRecord::Base
-  has_one :company
-  has_one :contract_type
-  has_one :student
-  attr_accessible :date_debut, :date_fin, :company, :contract_type, :student
+  belongs_to :company
+  belongs_to :contract_type
+  belongs_to :student
+  attr_accessible :date_debut, :date_fin, :company_id, :contract_type_id, :student_id
   
   validates :company, :presence => true
   validates :contract_type, :presence => true

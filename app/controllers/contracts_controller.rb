@@ -6,7 +6,7 @@ class ContractsController < ApplicationController
   end
   
   def show
-    @contract = Contract.find(params[:id])
+    @contract = Contract.find(params[:id], :include => [:student, :company, :contract_type])
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @contract_type }
@@ -26,12 +26,15 @@ class ContractsController < ApplicationController
   end
   
   def edit
-		@contract = Contract.find(params[:id])
+		@contract = Contract.find(params[:id], :include => [:student, :company, :contract_type])
   end
   
   def create
-  	@contract = Contract.new(params[:contract])  	
-  	@contract.student = params[:student]
+  	@contract = Contract.new( :student_id => params[:contract][:student], 
+  														:company_id => params[:contract][:company], 
+  														:contract_type_id => params[:contract][:contrac_type],
+  														:date_debut => params[:contract][:date_debut],
+  														:date_fin => params[:contract][:date_fin])
   	respond_to do |format|
     	if @contract.save
       	format.html  { redirect_to(@contract, :notice => 'Contract Type was successfully created.') }
