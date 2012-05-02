@@ -1,4 +1,4 @@
 class Company < ActiveRecord::Base
-  belongs_to :contract
+  has_one :contract
   attr_accessible :ad_rue, :ad_ville, :name
 end

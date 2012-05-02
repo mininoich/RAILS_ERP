@@ -29,6 +29,8 @@ class ContractsController < ApplicationController
 		@contract = Contract.find(params[:id], :include => [:student, :company, :contract_type])
   end
   
+
+ 
   def create
   	@contract = Contract.new( :student_id => params[:contract][:student], 
   														:company_id => params[:contract][:company], 

@@ -1,15 +1,16 @@
 <%= form_for @contract do |form| %>
 	<p>
-		Etudiant :
-		<%= form.collection_select(:student, @students, :id, :user_name, :prompt => true) %>
+		<%= form.label :student %>
+		<%= form.collection_select :user_id, User.all, :id, :name %>  
+	</p>
 	<p>	
 	<p>
-		Entreprise :
-		<%= form.collection_select(:company, @companies, :id, :name, :prompt => true) %>
+		<%= form.label :company %>
+		<%= form.collection_select :company_id, Company.all, :id, :name %>
 	<p>
 	<p>
-		Type de contrat :
-		<%= form.collection_select(:contract_type, @contract_types, :id, :libelle, :prompt => true) %>
+		<%= form.label :contract_type %>
+		<%= form.collection_select :contract_type_id, ContractType.all, :id, :libelle %>
 	<p>		
 	<p>
 		<%= form.label :date_debut %>

@@ -10,9 +10,17 @@ gem 'sqlite3', '1.3.5'
 gem 'json'
 gem 'devise'
 gem 'formtastic'
+# <<<<<<< HEAD
 
 gem 'execjs'
 gem 'therubyracer', require: "v8"
+# =======
+gem 'debugger'
+gem 'twitter-bootstrap-rails'
+gem 'simple-navigation'
+gem 'simple-navigation-bootstrap'
+
+# >>>>>>> df3c99079c8c0c88ee4b251151c36264d1d2a63b
 
 # Gems used only for assets and not required
 # in production environments by default.

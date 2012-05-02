@@ -9,5 +9,6 @@ class User < ActiveRecord::Base
   attr_accessible :name
   has_many :students, :dependent => :delete_all #ON DELETE CASCADE
   has_many :teachers, :dependent => :delete_all #ON DELETE CASCADE
+  has_many :supervisors, :dependent => :delete_all #ON DELETE CASCADE
   has_many :admins, :dependent => :delete_all #ON DELETE CASCADE
 end

@@ -3,9 +3,9 @@ class CreateContracts < ActiveRecord::Migration
     create_table :contracts do |t|
       t.datetime :date_debut
       t.datetime :date_fin
-      t.integer	 :company_id
-      t.integer	 :student_id
-      t.integer	 :contract_type_id
+      t.references :company
+			t.references :contract_type
+			t.references :student  
 
       t.timestamps
     end

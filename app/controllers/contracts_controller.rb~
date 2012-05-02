@@ -29,8 +29,14 @@ class ContractsController < ApplicationController
 		@contract = Contract.find(params[:id], :include => [:student, :company, :contract_type])
   end
   
+#<%= form.collection_select :student_id, Student.all, :id, :name %>  
+#:student_id => params[:contract][:student],
+ 
   def create
-  	@contract = Contract.new(params[:contract], :include => [:student, :company, :contract_type])
+  	@contract = Contract.new( :company_id => params[:contract][:company], 
+  														:contract_type_id => params[:contract][:contrac_type],
+  														:date_debut => params[:contract][:date_debut],
+  														:date_fin => params[:contract][:date_fin])
   	respond_to do |format|
     	if @contract.save
       	format.html  { redirect_to(@contract, :notice => 'Contract Type was successfully created.') }

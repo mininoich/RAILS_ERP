@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120424181510) do
+ActiveRecord::Schema.define(:version => 20120425181455) do
 
   create_table "abilities", :force => true do |t|
     t.integer  "teacher_id"
@@ -45,21 +45,24 @@ ActiveRecord::Schema.define(:version => 20120424181510) do
   create_table "contracts", :force => true do |t|
     t.datetime "date_debut"
     t.datetime "date_fin"
-    t.integer  "company_id"
-    t.integer  "contract_type_id"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
-  add_index "contracts", ["company_id"], :name => "index_contracts_on_company_id"
-  add_index "contracts", ["contract_type_id"], :name => "index_contracts_on_contract_type_id"
+  create_table "klasses", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "students", :force => true do |t|
     t.integer  "user_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "klass_id"
   end
 
+  add_index "students", ["klass_id"], :name => "index_students_on_klass_id"
   add_index "students", ["user_id"], :name => "index_students_on_user_id"
 
   create_table "subjects", :force => true do |t|
@@ -67,6 +70,14 @@ ActiveRecord::Schema.define(:version => 20120424181510) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "supervisors", :force => true do |t|
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "supervisors", ["user_id"], :name => "index_supervisors_on_user_id"
 
   create_table "teachers", :force => true do |t|
     t.integer  "user_id"
