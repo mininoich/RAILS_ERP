@@ -14,11 +14,11 @@
 	<p>		
 	<p>
 		<%= form.label :date_debut %>
-		<%= date_select :form, :date_debut %>
+		<%= date_select :form, :date_debut, :order => [:day, :month, :year]%>
 	</p>
 	<p>
 		<%= form.label :date_fin %>
-		<%= date_select :form, :date_fin %>
+		<%= date_select :form, :date_fin, :order => [:day, :month, :year]%>
 	</p>
 	<%= form.submit %>
 <% end %>

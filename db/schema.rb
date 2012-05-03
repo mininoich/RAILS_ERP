@@ -34,17 +34,19 @@ ActiveRecord::Schema.define(:version => 20120425181455) do
     t.string   "ad_ville"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "company_id"
   end
 
   create_table "contract_types", :force => true do |t|
     t.string   "libelle"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.integer  "contract_type_id"
   end
 
   create_table "contracts", :force => true do |t|
-    t.datetime "date_debut"
-    t.datetime "date_fin"
+    t.date     "date_debut"
+    t.date     "date_fin"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -60,6 +62,7 @@ ActiveRecord::Schema.define(:version => 20120425181455) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.integer  "klass_id"
+    t.integer  "student_id"
   end
 
   add_index "students", ["klass_id"], :name => "index_students_on_klass_id"
