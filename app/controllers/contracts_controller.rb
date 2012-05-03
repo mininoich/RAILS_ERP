@@ -32,11 +32,13 @@ class ContractsController < ApplicationController
 
  
   def create
-  	@contract = Contract.new( :student_id => params[:contract][:student], 
-  														:company_id => params[:contract][:company], 
-  														:contract_type_id => params[:contract][:contrac_type],
-  														:date_debut => params[:contract][:date_debut],
-  														:date_fin => params[:contract][:date_fin])
+  	@contract = Contract.new( 	:student => Student.find(params[:contract][:student]), 
+  										:company => Company.find(params[:contract][:company]), 
+  										:contract_type => ContractType.find(params[:contract][:contract_type]), 
+										:date_debut => params[:contract][:date_debut],
+										:date_fin => params[:contract][:date_fin])
+ 
+ 		#@contract = Contract.new(params[:contract])
   	respond_to do |format|
     	if @contract.save
       	format.html  { redirect_to(@contract, :notice => 'Contract Type was successfully created.') }
@@ -47,6 +49,7 @@ class ContractsController < ApplicationController
     	end
   	end
 	end
+	
   
   def update
   	@contract = Contract.find(params[:id]) 

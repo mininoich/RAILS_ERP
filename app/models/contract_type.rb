@@ -1,4 +1,4 @@
 class ContractType < ActiveRecord::Base
-  belongs_to :contract
+  has_one :contract
   attr_accessible :libelle
 end

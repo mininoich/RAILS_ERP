@@ -3,5 +3,5 @@ class Student < ActiveRecord::Base
   attr_accessible :name, :email, :password, :klass_id
   belongs_to :user
   belongs_to :klass
-  belongs_to :contract
+  has_one :contract
 end

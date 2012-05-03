@@ -1,8 +1,7 @@
 <h1>Contract</h1>
-Etudiant : <%= @contract.student.user.name %><br />
-Entreprise : <%= @contract.company.name %><br />
-Type de contrat : <%= @contract.contract_type.libelle %><br /> 
-Nom : <%= @contract.date_debut %><br />
-Rue : <%= @contract.date_fin %><br />
-<br />
-<%= link_to "Companies list", :action => 'index' %>
+<p>Etudiant : <%= @contract.student.user.name %></p>
+<p>Entreprise : <%= @contract.company.name %></p>
+<p>Type de contrat : <%= @contract.contract_type.libelle %></p>
+<p>Nom : <%= @contract.date_debut %></p>
+<p>Rue : <%= @contract.date_fin %></p>
+<p><%= link_to "Companies list", :action => 'index' %></p>
