@@ -38,7 +38,7 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :subjects, 'Subjects', subjects_path, :if => Proc.new { admin_signed_in? }
     primary.item :klasses, 'Classes', klasses_path, :if => Proc.new { admin_signed_in? }
     primary.item :klasses, 'Contrats', contracts_path, :if => Proc.new { admin_signed_in? }
-    primary.item :klasses, 'Types de Contrats', contract_types_path, :if => Proc.new { admin_signed_in? }
+    primary.item :klasses, 'Types de Contrats', type_contracts_path, :if => Proc.new { admin_signed_in? }
     primary.item :klasses, 'Entreprises', companies_path, :if => Proc.new { admin_signed_in? }
     
     primary.dom_class = 'nav'

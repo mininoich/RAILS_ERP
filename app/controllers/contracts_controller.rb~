@@ -6,7 +6,7 @@ class ContractsController < ApplicationController
   end
   
   def show
-    @contract = Contract.find(params[:id], :include => [:student, :company, :contract_type])
+    @contract = Contract.find(params[:id], :include => [:students, :companies, :contract_types])
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @contract_type }
@@ -29,17 +29,36 @@ class ContractsController < ApplicationController
 		@contract = Contract.find(params[:id], :include => [:student, :company, :contract_type])
   end
   
-#<%= form.collection_select :student_id, Student.all, :id, :name %>  
-#:student_id => params[:contract][:student],
+
  
   def create
-  	@contract = Contract.new( :company_id => params[:contract][:company], 
-  														:contract_type_id => params[:contract][:contrac_type],
-  														:date_debut => params[:contract][:date_debut],
-  														:date_fin => params[:contract][:date_fin])
+  	
+		@datedebut = Date.civil(params[:contract][:"date_debut(1i)"].to_i,
+		params[:contract][:"date_debut(2i)"].to_i,
+		params[:contract][:"date_debut(3i)"].to_i)
+								
+		@datefin = Date.civil(params[:contract][:"date_fin(1i)"].to_i,
+		params[:contract][:"date_fin(2i)"].to_i,
+		params[:contract][:"date_fin(3i)"].to_i)
+	
+		@company = Company.find(params[:contract][:companies])		
+		@student = Student.find(params[:contract][:students])
+		@contract_type = ContractType.find(params[:contract][:contract_types])
+										
+		@contract = Contract.new(	:date_debut => @datedebut,
+															:date_fin => @datefin,
+															:students => @student)
+ 
   	respond_to do |format|
     	if @contract.save
-      	format.html  { redirect_to(@contract, :notice => 'Contract Type was successfully created.') }
+															
+		#@contract.students = @student
+		#@contract.companies = @company
+		#@contract.contract_types = @contract_type
+		
+				#@contract.save
+		
+      	format.html  { redirect_to(@contract, :notice => 'Contract was successfully created.') }
       	format.json  { render :json => @contract, :status => :created, :location => @contract }
     	else
       	format.html  { render :action => "new" }
@@ -47,6 +66,7 @@ class ContractsController < ApplicationController
     	end
   	end
 	end
+	
   
   def update
   	@contract = Contract.find(params[:id]) 
@@ -65,7 +85,7 @@ class ContractsController < ApplicationController
     Contract.find(params[:id]).destroy
 
     respond_to do |format|
-      format.html { redirect_to contract_url }
+      format.html { redirect_to contracts_url }
       format.json { head :ok }
     end
   end 
