@@ -5,16 +5,16 @@
 			<td>Places number</td>
 			<td>Computers number</td>
 	</thead>
-<% @rooms.each do |s| %>
+<% @rooms.each do |r| %>
 	<tr>
-		<td><%= s.name %></td>
-		<td><%= s.nb_places %></td>
-		<td><%= s.nb_computers %></td>
+		<td><%= r.name %></td>
+		<td><%= r.nb_places %></td>
+		<td><%= r.nb_computers %></td>
 		<td>
-			<%= link_to "Show", s %>
+			<%= link_to "Show", r %>
 			<% if admin_signed_in? %>
-				<%= link_to "Edit", [:edit, s] %>
-				<%= link_to 'Delete', s, :confirm => 'Are you sure ?', :method => :delete %>
+				<%= link_to "Edit", [:edit, r] %>
+				<%= link_to 'Delete', r, :confirm => 'Are you sure ?', :method => :delete %>
 			<% end %>
 		</td>
 	</tr>

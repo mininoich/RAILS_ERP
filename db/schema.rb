@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120425193154) do
+ActiveRecord::Schema.define(:version => 20120511153202) do
 
   create_table "abilities", :force => true do |t|
     t.integer  "teacher_id"
@@ -19,6 +19,15 @@ ActiveRecord::Schema.define(:version => 20120425193154) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "absences", :force => true do |t|
+    t.string   "justificative"
+    t.integer  "student_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "absences", ["student_id"], :name => "index_absences_on_student_id"
 
   create_table "admins", :force => true do |t|
     t.integer  "user_id"
@@ -33,6 +42,22 @@ ActiveRecord::Schema.define(:version => 20120425193154) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "lessons", :force => true do |t|
+    t.datetime "date_hour_start"
+    t.datetime "date_hour_end"
+    t.integer  "subject_id"
+    t.integer  "room_id"
+    t.integer  "klass_id"
+    t.integer  "teacher_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "lessons", ["klass_id"], :name => "index_lessons_on_klass_id"
+  add_index "lessons", ["room_id"], :name => "index_lessons_on_room_id"
+  add_index "lessons", ["subject_id"], :name => "index_lessons_on_subject_id"
+  add_index "lessons", ["teacher_id"], :name => "index_lessons_on_teacher_id"
 
   create_table "rooms", :force => true do |t|
     t.string   "name"

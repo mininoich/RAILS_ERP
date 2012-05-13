@@ -1,0 +1,15 @@
+<%= form_for @absence do |form| %>
+	<p>
+		<%= form.label :lesson %>
+		<%= form.collection_select (:lesson_id, Lesson.all, :id, :date_hour_start) %>
+	</p>
+	<p>
+		<%= form.label :student %>
+		<%= form.collection_select :student_id, Student.all, :id, :name %>
+	</p>
+	<p>
+		<%= form.label :justificative %>
+		<%= form.text_field :justificative %>
+	</p>
+	<%= form.submit %>
+<% end %>
