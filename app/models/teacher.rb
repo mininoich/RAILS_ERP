@@ -4,4 +4,9 @@ class Teacher < ActiveRecord::Base
   belongs_to :user
   has_many :abilities, :dependent => :delete_all #ON DELETE CASCADE
   has_many :subjects, :through => :abilities
+  
+  def nameTeacher
+  	self.user.name
+  end
+  
 end
