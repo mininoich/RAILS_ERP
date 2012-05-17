@@ -52,11 +52,18 @@ ActiveRecord::Schema.define(:version => 20120511153202) do
   end
 
   create_table "contracts", :force => true do |t|
-    t.datetime "date_debut"
-    t.datetime "date_fin"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.date     "date_debut"
+    t.date     "date_fin"
+    t.integer  "student_id"
+    t.integer  "company_id"
+    t.integer  "contract_type_id"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
+
+  add_index "contracts", ["company_id"], :name => "index_contracts_on_company_id"
+  add_index "contracts", ["contract_type_id"], :name => "index_contracts_on_contract_type_id"
+  add_index "contracts", ["student_id"], :name => "index_contracts_on_student_id"
 
   create_table "klasses", :force => true do |t|
     t.string   "name"

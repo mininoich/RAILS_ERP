@@ -1,5 +1,5 @@
 <h1>Contract</h1>
-<table>
+<table class="table table-bordered table-condensed">
 	<thead>
 			<td>Etudiant</td>
 			<td>Entreprise</td>
@@ -10,9 +10,9 @@
 	</thead>
 <% @contracts.each do |c| %>
 	<tr>
-		<td><%= c.student %></td>
-		<td><%= c.company %></td>
-		<td><%= c.contract_type %></td>
+		<td><%= c.student.user.name %></td>
+		<td><%= c.company.name %></td>
+		<td><%= c.contract_type.libelle %></td>
 		<td><%= c.date_debut %></td>
 		<td><%= c.date_fin %></td>
 		<td>

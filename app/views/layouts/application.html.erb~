@@ -2,39 +2,41 @@
 <html>
 <head>
   <title>ProjetERP</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-		
-	<div class="navbar navbar-fixed-top">
-	  <div class="navbar-inner">
-	    <div class="container">
-	      <ul class="nav pull-left">
-				  <li>
-				    <a href="#">INGESUP</a>
-				  </li>
-				</ul>
-				
-					<%= render_navigation :renderer => :bootstrap %>
-				
-				<% if user_signed_in? %>
-				<ul class="nav pull-right">
-					<li><a href="#"><%= current_user.email %></a></li>
-					<li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
-				</ul>
-				<% end %>
-	    </div>
-	  </div>
-	</div>
-		
-	<div class="container well maincontainer">
-		
-		<% if !notice.blank? %><p class="alert alert-success"><%= notice %></p><% end %>
-		<% if !alert.blank? %><p class="alert alert-error"><%= alert %></p><% end %>
-		<%= yield %>
-	</div>
+
+
+
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container">
+<ul class="nav pull-left">
+<li>
+<a href="#">INGESUP</a>
+</li>
+</ul>
+
+<%= render_navigation :renderer => :bootstrap %>
+
+<% if user_signed_in? %>
+<ul class="nav pull-right">
+<li><a href="#"><%= current_user.email %></a></li>
+<li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+</ul>
+<% end %>
+</div>
+</div>
+</div>
+
+<div class="container well maincontainer">
+
+<% if !notice.blank? %><p class="alert alert-success"><%= notice %></p><% end %>
+<% if !alert.blank? %><p class="alert alert-error"><%= alert %></p><% end %>
+<%= yield %>
+</div>
 
 </body>
 </html>

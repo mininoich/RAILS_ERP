@@ -38,6 +38,9 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :subjects, 'Subjects', subjects_path, :if => Proc.new { admin_signed_in? }
     primary.item :lessons, 'Lessons', lessons_path, :if => Proc.new { admin_signed_in? }
     primary.item :klasses, 'Classes', klasses_path, :if => Proc.new { admin_signed_in? }
+    primary.item :contracts, 'Contrats', contracts_path, :if => Proc.new { admin_signed_in? }
+    primary.item :contract_types, 'Types de Contrats', contract_types_path, :if => Proc.new { admin_signed_in? }
+    primary.item :commpanies, 'Entreprises', companies_path, :if => Proc.new { admin_signed_in? }
     primary.item :absences, 'Absences', absences_path, :if => Proc.new { admin_signed_in? }
     primary.item :planning, 'Planning', 'planning', :if => Proc.new { student_signed_in? }
     
