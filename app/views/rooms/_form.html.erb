@@ -1,0 +1,15 @@
+<%= form_for @room do |form| %>
+	<p>
+		<%= form.label :name %>
+		<%= form.text_field :name %>
+	</p>
+	<p>
+		<%= form.label :nb_places %>
+		<%= form.text_field :nb_places %>
+	</p>
+	<p>
+		<%= form.label :nb_computers %>
+		<%= form.text_field :nb_computers %>
+	</p>
+	<%= form.submit %>
+<% end %>
