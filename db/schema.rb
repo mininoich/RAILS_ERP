@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120425181455) do
+ActiveRecord::Schema.define(:version => 20120511153202) do
 
   create_table "abilities", :force => true do |t|
     t.integer  "teacher_id"
@@ -19,6 +19,15 @@ ActiveRecord::Schema.define(:version => 20120425181455) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "absences", :force => true do |t|
+    t.string   "justificative"
+    t.integer  "student_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "absences", ["student_id"], :name => "index_absences_on_student_id"
 
   create_table "admins", :force => true do |t|
     t.integer  "user_id"
@@ -34,22 +43,27 @@ ActiveRecord::Schema.define(:version => 20120425181455) do
     t.string   "ad_ville"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.integer  "company_id"
   end
 
   create_table "contract_types", :force => true do |t|
     t.string   "libelle"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
-    t.integer  "contract_type_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "contracts", :force => true do |t|
     t.date     "date_debut"
     t.date     "date_fin"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.integer  "student_id"
+    t.integer  "company_id"
+    t.integer  "contract_type_id"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
+
+  add_index "contracts", ["company_id"], :name => "index_contracts_on_company_id"
+  add_index "contracts", ["contract_type_id"], :name => "index_contracts_on_contract_type_id"
+  add_index "contracts", ["student_id"], :name => "index_contracts_on_student_id"
 
   create_table "klasses", :force => true do |t|
     t.string   "name"
@@ -57,12 +71,35 @@ ActiveRecord::Schema.define(:version => 20120425181455) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "lessons", :force => true do |t|
+    t.datetime "date_hour_start"
+    t.datetime "date_hour_end"
+    t.integer  "subject_id"
+    t.integer  "room_id"
+    t.integer  "klass_id"
+    t.integer  "teacher_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "lessons", ["klass_id"], :name => "index_lessons_on_klass_id"
+  add_index "lessons", ["room_id"], :name => "index_lessons_on_room_id"
+  add_index "lessons", ["subject_id"], :name => "index_lessons_on_subject_id"
+  add_index "lessons", ["teacher_id"], :name => "index_lessons_on_teacher_id"
+
+  create_table "rooms", :force => true do |t|
+    t.string   "name"
+    t.integer  "nb_places"
+    t.integer  "nb_computers"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
   create_table "students", :force => true do |t|
     t.integer  "user_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.integer  "klass_id"
-    t.integer  "student_id"
   end
 
   add_index "students", ["klass_id"], :name => "index_students_on_klass_id"

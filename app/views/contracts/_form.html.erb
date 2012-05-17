@@ -1,16 +1,16 @@
 <%= form_for @contract do |form| %>
 	<p>
 		<%= form.label :students %>
-		<%= form.collection_select :students, @students, :id, :name %>  		
+		<%= form.collection_select :student_id, @students, :id, :nameStudent %>  		
 	</p>
 	<p>	
 	<p>
 		<%= form.label :companies %>
-		<%= form.collection_select :companies, @companies, :id, :name %>
+		<%= form.collection_select :company_id, @companies, :id, :name %>
 	<p>
 	<p>
-		<%= form.label :contract_type %>
-		<%= form.collection_select :contract_types, @contract_types, :id, :libelle %>
+		<%= form.label :contract_types %>
+		<%= form.collection_select :contract_type_id, @contract_types, :id, :libelle %>
 	<p>		
 	<p>
 		<%= form.label :date_debut %>

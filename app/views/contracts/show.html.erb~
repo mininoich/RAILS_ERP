@@ -1,5 +1,5 @@
 <h1>Contract</h1>
-<p>Etudiant : 
+<p>Etudiant : <%= @contract.students.user.name %></p>
 <p>Entreprise : <%= @contract.companies.name %></p>
 <p>Type de contrat : <%= @contract.contract_types.libelle %></p>
 <p>Nom : <%= @contract.date_debut %></p>

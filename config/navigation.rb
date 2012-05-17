@@ -34,12 +34,14 @@ SimpleNavigation::Configuration.run do |navigation|
   navigation.items do |primary|
     primary.item :students, 'Students', students_path, :if => Proc.new { user_signed_in? }
     primary.item :teachers, 'Teachers', teachers_path, :if => Proc.new { user_signed_in? }
-    primary.item :supervisors, 'Supervisors', supervisors_path, :if => Proc.new { user_signed_in? }
+    primary.item :rooms, 'Rooms', rooms_path, :if => Proc.new { user_signed_in? }
     primary.item :subjects, 'Subjects', subjects_path, :if => Proc.new { admin_signed_in? }
+    primary.item :lessons, 'Lessons', lessons_path, :if => Proc.new { admin_signed_in? }
     primary.item :klasses, 'Classes', klasses_path, :if => Proc.new { admin_signed_in? }
-    primary.item :klasses, 'Contrats', contracts_path, :if => Proc.new { admin_signed_in? }
-    primary.item :klasses, 'Types de Contrats', contract_types_path, :if => Proc.new { admin_signed_in? }
-    primary.item :klasses, 'Entreprises', companies_path, :if => Proc.new { admin_signed_in? }
+    primary.item :contracts, 'Contrats', contracts_path, :if => Proc.new { admin_signed_in? }
+    primary.item :contract_types, 'Types de Contrats', contract_types_path, :if => Proc.new { admin_signed_in? }
+    primary.item :commpanies, 'Entreprises', companies_path, :if => Proc.new { admin_signed_in? }
+    primary.item :absences, 'Absences', absences_path, :if => Proc.new { admin_signed_in? }
     
     primary.dom_class = 'nav'
     # Add an item to the primary navigation. The following params apply:

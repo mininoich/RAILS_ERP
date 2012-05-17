@@ -4,11 +4,15 @@ class CreateContracts < ActiveRecord::Migration
       t.date :date_debut
       t.date :date_fin 
       
-      t.integer :students_id   
-      t.integer :companies_id   
-      t.integer :contract_types_id   
+      t.belongs_to :student
+      t.belongs_to :company   
+      t.belongs_to :contract_type   
 
       t.timestamps
     end
+      
+      add_index :contracts, :student_id   
+      add_index :contracts, :company_id   
+      add_index :contracts, :contract_type_id 
   end
 end

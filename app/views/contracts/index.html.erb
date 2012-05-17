@@ -10,9 +10,9 @@
 	</thead>
 <% @contracts.each do |c| %>
 	<tr>
-		<td><%= c.students %></td>
-		<td><%= c.companies %></td>
-		<td><%= c.contract_types %></td>
+		<td><%= c.student.user.name %></td>
+		<td><%= c.company.name %></td>
+		<td><%= c.contract_type.libelle %></td>
 		<td><%= c.date_debut %></td>
 		<td><%= c.date_fin %></td>
 		<td>

@@ -3,5 +3,10 @@ class Student < ActiveRecord::Base
   attr_accessible :name, :email, :password, :klass_id
   belongs_to :user
   belongs_to :klass
-  has_one :contracts
+  has_one :contract
+  
+  
+  def nameTeacher
+  	self.user.name
+  end
 end

@@ -4,4 +4,9 @@ class Student < ActiveRecord::Base
   belongs_to :user
   belongs_to :klass
   has_one :contract
+  
+  
+  def nameStudent
+  	self.user.name
+  end
 end
