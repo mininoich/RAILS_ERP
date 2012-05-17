@@ -1,7 +1,0 @@
-<%= form_for @contracttype do |form| %>
-	<p>
-		<%= form.label :libelle %>
-		<%= form.text_field :libelle %>
-	</p>
-	<%= form.submit %>
-<% end %>

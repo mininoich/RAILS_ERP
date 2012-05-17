@@ -1,6 +1,0 @@
-<h1>Company</h1>
-Nom : <%= @company.name %><br />
-Rue : <%= @company.ad_rue %><br />
-Ville : <%= @company.ad_ville %><br />
-<br />
-<%= link_to "Companies list", :action => 'index' %>
