@@ -77962,3 +77962,1501 @@ Served asset /teachers.js - 304 Not Modified (1ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-17 14:08:11 +0200
 Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/klasses" for 127.0.0.1 at 2012-05-17 16:02:13 +0200
+Processing by KlassesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mKlass Load (0.1ms)[0m  [1mSELECT "klasses".* FROM "klasses" [0m
+  Rendered klasses/index.html.erb within layouts/application (66.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+Completed 200 OK in 1739ms (Views: 1326.0ms | ActiveRecord: 70.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:15 +0200
+Served asset /application.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:15 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/absences.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:15 +0200
+Served asset /absences.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:15 +0200
+Served asset /companies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:15 +0200
+Served asset /contract_types.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/contracts.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:15 +0200
+Served asset /contracts.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/klasses.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:15 +0200
+Served asset /klasses.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/lessons.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:15 +0200
+Served asset /lessons.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:15 +0200
+Served asset /rooms.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:15 +0200
+Served asset /students.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:15 +0200
+Served asset /subjects.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/supervisors.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:15 +0200
+Served asset /supervisors.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:15 +0200
+Served asset /teachers.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:15 +0200
+Served asset /jquery.js - 304 Not Modified (98ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:15 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:15 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (52ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (55ms)
+
+
+Started GET "/assets/absences.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /absences.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /bootstrap.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /companies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /contract_types.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/contracts.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /contracts.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/klasses.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /klasses.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/lessons.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /lessons.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /students.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /rooms.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /subjects.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/supervisors.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /supervisors.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /teachers.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:16 +0200
+Served asset /application.js - 304 Not Modified (137ms)
+
+
+Started GET "/contracts" for 127.0.0.1 at 2012-05-17 16:02:18 +0200
+Processing by ContractsController#index as HTML
+  [1m[36mUser Load (4.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mContract Load (0.3ms)[0m  SELECT "contracts".* FROM "contracts" 
+  [1m[36mStudent Load (0.5ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = 1 LIMIT 1[0m
+  [1m[35mContractType Load (0.3ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = 2 LIMIT 1
+  [1m[36mAdmin Load (1.3ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = 1 LIMIT 1
+  [1m[36mContractType Load (0.8ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  Rendered contracts/index.html.erb within layouts/application (286.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+Completed 200 OK in 448ms (Views: 404.7ms | ActiveRecord: 17.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/absences.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /absences.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contracts.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /contracts.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/lessons.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /lessons.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/klasses.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /klasses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /rooms.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/supervisors.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /supervisors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/absences.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /absences.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /bootstrap.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /companies.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/klasses.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /klasses.js - 304 Not Modified (142ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lessons.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /lessons.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /rooms.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/contracts.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /contracts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/supervisors.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:19 +0200
+Served asset /supervisors.js - 304 Not Modified (0ms)
+
+
+Started GET "/contract_types" for 127.0.0.1 at 2012-05-17 16:02:21 +0200
+Processing by ContractTypesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mContractType Load (0.5ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" [0m
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  Rendered contract_types/index.html.erb within layouts/application (8.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+Completed 200 OK in 64ms (Views: 59.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/absences.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /absences.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /companies.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /contract_types.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/contracts.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /contracts.css - 304 Not Modified (133ms)
+
+
+Started GET "/assets/klasses.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /klasses.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/lessons.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /lessons.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /rooms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /students.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /subjects.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/supervisors.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /supervisors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /teachers.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /jquery.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/absences.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /absences.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /companies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /contract_types.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/contracts.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /contracts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/klasses.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /klasses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /subjects.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /rooms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lessons.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/supervisors.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /supervisors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /teachers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:22 +0200
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/contracts" for 127.0.0.1 at 2012-05-17 16:02:23 +0200
+Processing by ContractsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mContract Load (0.2ms)[0m  SELECT "contracts".* FROM "contracts" 
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCompany Load (0.5ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = 1 LIMIT 1[0m
+  [1m[35mContractType Load (0.2ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = 2 LIMIT 1
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = 1 LIMIT 1
+  [1m[36mContractType Load (0.2ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  Rendered contracts/index.html.erb within layouts/application (13.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+Completed 200 OK in 118ms (Views: 113.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/absences.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /absences.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /companies.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /contract_types.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/contracts.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /contracts.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/klasses.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /klasses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lessons.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /lessons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /rooms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /students.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /subjects.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/supervisors.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /supervisors.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/absences.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /absences.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /bootstrap.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /companies.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /contract_types.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/klasses.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /klasses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contracts.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /contracts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/lessons.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /rooms.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /students.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/supervisors.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /supervisors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /teachers.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:24 +0200
+Served asset /application.js - 304 Not Modified (23ms)
+
+
+Started GET "/contracts/1" for 127.0.0.1 at 2012-05-17 16:02:25 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mContract Load (0.4ms)[0m  [1mSELECT "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mStudent Load (0.5ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCompany Load (1.0ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = 1 LIMIT 1
+  [1m[36mContractType Load (0.4ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = 2 LIMIT 1[0m
+  Rendered contracts/show.html.erb within layouts/application (112.9ms)
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+Completed 200 OK in 170ms (Views: 162.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /contract_types.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /companies.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/contracts.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /contracts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/absences.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /absences.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/klasses.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /klasses.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/lessons.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /lessons.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /students.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /rooms.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/supervisors.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /supervisors.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /subjects.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /jquery.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/absences.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /absences.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /bootstrap.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /contract_types.js - 304 Not Modified (120ms)
+
+
+Started GET "/assets/contracts.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /contracts.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/klasses.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /klasses.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /rooms.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /students.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/lessons.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /lessons.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/supervisors.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /supervisors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /teachers.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:26 +0200
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2012-05-17 16:02:30 +0200
+Processing by ContractsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mAdmin Load (2.7ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students" [0m
+  [1m[35mCompany Load (0.3ms)[0m  SELECT "companies".* FROM "companies" 
+  [1m[36mContractType Load (0.2ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" [0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (6.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  Rendered contracts/_form.html.erb (111.1ms)
+  Rendered contracts/new.html.erb within layouts/application (153.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+Completed 200 OK in 430ms (Views: 405.2ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/assets/absences.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /absences.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contracts.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /contracts.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /contract_types.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/klasses.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /klasses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /students.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/lessons.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /lessons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /rooms.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/supervisors.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /supervisors.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /teachers.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/absences.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /absences.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /bootstrap.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /companies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /contract_types.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/contracts.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /contracts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/klasses.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /klasses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lessons.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /lessons.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /rooms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /subjects.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/supervisors.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /supervisors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:31 +0200
+Served asset /teachers.js - 304 Not Modified (1ms)
+
+
+Started POST "/contracts" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Processing by ContractsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XlZ2VlXSogo3sGZ/d2wVvD/Fl/oD+aZd4jTVezlJitk=", "contract"=>{"student_id"=>"2", "company_id"=>"1", "contract_type_id"=>"2", "date_debut(3i)"=>"17", "date_debut(2i)"=>"6", "date_debut(1i)"=>"2012", "date_fin(3i)"=>"17", "date_fin(2i)"=>"5", "date_fin(1i)"=>"2013"}, "commit"=>"Create Contract"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mAdmin Load (6.6ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (29.3ms)[0m  INSERT INTO "contracts" ("company_id", "contract_type_id", "created_at", "date_debut", "date_fin", "student_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["company_id", 1], ["contract_type_id", 2], ["created_at", Thu, 17 May 2012 14:02:42 UTC +00:00], ["date_debut", Sun, 17 Jun 2012], ["date_fin", Fri, 17 May 2013], ["student_id", 2], ["updated_at", Thu, 17 May 2012 14:02:42 UTC +00:00]]
+  [1m[36m (9.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contracts/3
+Completed 302 Found in 59ms (ActiveRecord: 46.5ms)
+
+
+Started GET "/contracts/3" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (7.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mContract Load (0.6ms)[0m  [1mSELECT "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = 1 LIMIT 1
+  [1m[36mContractType Load (0.2ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = 2 LIMIT 1[0m
+  Rendered contracts/show.html.erb within layouts/application (6.3ms)
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+Completed 200 OK in 129ms (Views: 113.9ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/absences.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /absences.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /contract_types.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/contracts.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /contracts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/klasses.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /klasses.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/lessons.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /lessons.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /rooms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /students.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /subjects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/supervisors.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /supervisors.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /teachers.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /companies.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/absences.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /absences.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/contracts.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /contracts.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/klasses.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /klasses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lessons.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /lessons.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /students.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /rooms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /subjects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/supervisors.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /supervisors.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /teachers.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:42 +0200
+Served asset /application.js - 304 Not Modified (138ms)
+
+
+Started GET "/contracts" for 127.0.0.1 at 2012-05-17 16:02:45 +0200
+Processing by ContractsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mContract Load (0.2ms)[0m  SELECT "contracts".* FROM "contracts" 
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (10.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = 1 LIMIT 1[0m
+  [1m[35mContractType Load (0.2ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = 2 LIMIT 1
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mStudent Load (1.5ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "companies".* FROM "companies" WHERE "companies"."id" = 1 LIMIT 1
+  [1m[36mContractType Load (0.2ms)[0m  [1mSELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "companies".* FROM "companies" WHERE "companies"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "contract_types".* FROM "contract_types" WHERE "contract_types"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  Rendered contracts/index.html.erb within layouts/application (66.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."user_id" = 2 LIMIT 1
+Completed 200 OK in 160ms (Views: 139.0ms | ActiveRecord: 14.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:45 +0200
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:45 +0200
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:45 +0200
+Served asset /companies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contract_types.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:45 +0200
+Served asset /contract_types.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contracts.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:45 +0200
+Served asset /contracts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/absences.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:45 +0200
+Served asset /absences.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/klasses.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:45 +0200
+Served asset /klasses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:45 +0200
+Served asset /rooms.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lessons.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:45 +0200
+Served asset /lessons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/students.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:45 +0200
+Served asset /students.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:45 +0200
+Served asset /subjects.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/supervisors.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:45 +0200
+Served asset /supervisors.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2012-05-17 16:02:45 +0200
+Served asset /teachers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:45 +0200
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:45 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:45 +0200
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (40ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /twitter/bootstrap.js - 304 Not Modified (130ms)
+
+
+Started GET "/assets/absences.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /absences.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/companies.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /companies.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/contract_types.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /contract_types.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contracts.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /contracts.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/klasses.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /klasses.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /rooms.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/lessons.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /lessons.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/students.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /students.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /subjects.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/supervisors.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /supervisors.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /teachers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-17 16:02:46 +0200
+Served asset /application.js - 304 Not Modified (10ms)
