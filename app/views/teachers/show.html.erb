@@ -1,0 +1,13 @@
+<h1>Teacher</h1>
+Name : <%= @teacher.user.name %><br />
+Email : <%= @teacher.user.email %><br />
+Subjects : 
+<ul>
+	<% @teacher.subjects.each do |s| %>
+		<li>
+			<%= s.name %>
+		</li>
+	<% end %>
+</ul>
+<br />
+<%= link_to "Teachers list", :action => 'index' %>

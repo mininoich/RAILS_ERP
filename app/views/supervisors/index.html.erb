@@ -1,0 +1,22 @@
+<h1>Supervisors</h1>
+<table class="table table-bordered table-condensed">
+	<thead>
+			<td>Name</td>
+			<td>Email</td>
+			<td>Action</td>
+	</thead>
+<% @supervisors.each do |s| %>
+	<tr>
+		<td><%= s.user.name %></td>
+		<td><%= s.user.email %></td>
+		<td>
+			<%= link_to "Show", s %>
+			<% if admin_signed_in? %>
+				<%= link_to "Edit", [:edit, s] %>
+				<%= link_to 'Delete', s, :confirm => 'Are you sure ?', :method => :delete %>
+			<% end %>
+		</td>
+	</tr>
+<% end %>
+</table>
+<%= link_to "Add", :action => 'new' %>

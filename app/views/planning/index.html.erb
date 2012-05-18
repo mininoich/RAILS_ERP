@@ -1,0 +1,19 @@
+<h1>Planning</h1>
+<table class="table table-bordered table-condensed">
+	<thead>
+			<td>Date/hour start</td>
+			<td>Date/hour end</td>
+			<td>Room</td>
+			<td>Subject</td>
+			<td>Teacher</td>
+	</thead>
+<% @lessons.each do |l| %>
+	<tr>
+		<td><%= l.date_hour_start %></td>
+		<td><%= l.date_hour_end %></td>
+		<td><%= l.room.name %></td>
+		<td><%= l.subject.name %></td>
+		<td><%= l.teacher.user.name %></td>
+	</tr>
+<% end %>
+</table>

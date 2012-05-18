@@ -1,0 +1,27 @@
+<%= form_for @lesson do |form| %>
+	<p>
+		<%= form.label :date_hour_start %>
+		<%= form.datetime_select :date_hour_start, :order => [:day, :month, :year, :hour, :minute]%>
+	</p>
+	<p>
+		<%= form.label :date_hour_end %>
+		<%= form.datetime_select :date_hour_end, :order => [:day, :month, :year, :hour, :minute]%>
+	</p>
+	<p>
+		<%= form.label :klass %>
+		<%= form.collection_select :klass_id, Klass.all, :id, :name %>
+	</p>
+	<p>
+		<%= form.label :subject %>
+		<%= form.collection_select :subject_id, Subject.all, :id, :name %>
+	</p>
+	<p>
+		<%= form.label :teacher %>
+		<%= form.collection_select :teacher_id, Teacher.all, :id, :nameTeacher %>
+	</p>
+	<p>
+		<%= form.label :room %>
+		<%= form.collection_select :room_id, Room.all, :id, :name %>
+	</p>
+	<%= form.submit %>
+<% end %>
