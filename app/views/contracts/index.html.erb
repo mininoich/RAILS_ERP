@@ -1,20 +1,20 @@
 <h1>Contract</h1>
 <table class="table table-bordered table-condensed">
 	<thead>
-			<td>Etudiant</td>
-			<td>Entreprise</td>
-			<td>Type de contrat</td>
-			<td>Date de début</td>
-			<td>Date de fin</td>
+			<td>Student</td>
+			<td>Company</td>
+			<td>Contract type</td>
+			<td>Date start</td>
+			<td>Date end</td>
 			<td>Action</td>
 	</thead>
 <% @contracts.each do |c| %>
 	<tr>
 		<td><%= c.student.user.name %></td>
 		<td><%= c.company.name %></td>
-		<td><%= c.contract_type.libelle %></td>
-		<td><%= c.date_debut %></td>
-		<td><%= c.date_fin %></td>
+		<td><%= c.contract_type.name %></td>
+		<td><%= c.date_start %></td>
+		<td><%= c.date_end %></td>
 		<td>
 			<%= link_to "Show", c %>
 			<% if admin_signed_in? %>

@@ -1,12 +1,12 @@
 <h1>Contract Types</h1>
 <table class="table table-bordered table-condensed">
 	<thead>
-			<td>Libelle</td>
+			<td>Name</td>
 			<td>Action</td>
 	</thead>
 <% @contract_type.each do |c| %>
 	<tr>
-		<td><%= c.libelle %></td>
+		<td><%= c.name %></td>
 		<td>
 			<%= link_to "Show", c %>
 			<% if admin_signed_in? %>

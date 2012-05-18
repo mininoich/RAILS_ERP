@@ -1,8 +1,8 @@
 class CreateContracts < ActiveRecord::Migration
   def change
     create_table :contracts do |t|
-      t.date :date_debut
-      t.date :date_fin 
+      t.date :date_start
+      t.date :date_end
       
       t.belongs_to :student
       t.belongs_to :company   

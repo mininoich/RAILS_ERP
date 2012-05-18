@@ -10,15 +10,15 @@
 	<p>
 	<p>
 		<%= form.label :contract_types %>
-		<%= form.collection_select :contract_type_id, @contract_types, :id, :libelle %>
+		<%= form.collection_select :contract_type_id, @contract_types, :id, :name %>
 	<p>		
 	<p>
-		<%= form.label :date_debut %>
-		<%= form.date_select :date_debut, :order => [:day, :month, :year]%>
+		<%= form.label :date_start %>
+		<%= form.date_select :date_start, :order => [:day, :month, :year]%>
 	</p>
 	<p>
-		<%= form.label :date_fin %>
-		<%= form.date_select :date_fin, :order => [:day, :month, :year]%>
+		<%= form.label :date_end %>
+		<%= form.date_select :date_end, :order => [:day, :month, :year]%>
 	</p>
 	<%= form.submit %>
 <% end %>

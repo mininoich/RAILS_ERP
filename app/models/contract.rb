@@ -1,5 +1,5 @@
 class Contract < ActiveRecord::Base
-  attr_accessible :date_debut, :date_fin, :student_id, :company_id, :contract_type_id
+  attr_accessible :date_start, :date_end, :student_id, :company_id, :contract_type_id
   belongs_to :company
   belongs_to :contract_type
   belongs_to :student

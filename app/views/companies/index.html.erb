@@ -9,8 +9,8 @@
 <% @companies.each do |c| %>
 	<tr>
 		<td><%= c.name %></td>
-		<td><%= c.ad_rue %></td>
-		<td><%= c.ad_ville %></td>
+		<td><%= c.ad_street %></td>
+		<td><%= c.ad_city %></td>
 		<td>
 			<%= link_to "Show", c %>
 			<% if admin_signed_in? %>

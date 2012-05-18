@@ -39,21 +39,21 @@ ActiveRecord::Schema.define(:version => 20120511153202) do
 
   create_table "companies", :force => true do |t|
     t.string   "name"
-    t.string   "ad_rue"
-    t.string   "ad_ville"
+    t.string   "ad_street"
+    t.string   "ad_city"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   create_table "contract_types", :force => true do |t|
-    t.string   "libelle"
+    t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   create_table "contracts", :force => true do |t|
-    t.date     "date_debut"
-    t.date     "date_fin"
+    t.date     "date_start"
+    t.date     "date_end"
     t.integer  "student_id"
     t.integer  "company_id"
     t.integer  "contract_type_id"
