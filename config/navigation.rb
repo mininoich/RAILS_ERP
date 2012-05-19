@@ -41,7 +41,7 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :contracts, 'Contracts', contracts_path, :if => Proc.new { admin_signed_in? }
     primary.item :contract_types, 'Contract types', contract_types_path, :if => Proc.new { admin_signed_in? }
     primary.item :companies, 'Companies', companies_path, :if => Proc.new { admin_signed_in? }
-    primary.item :absences, 'Absences', absences_path, :if => Proc.new { admin_signed_in? }
+    #primary.item :absences, 'Absences', absences_path, :if => Proc.new { admin_signed_in? }
     primary.item :planning, 'Planning', 'planning', :if => Proc.new { student_signed_in? }
     
     primary.dom_class = 'nav'
