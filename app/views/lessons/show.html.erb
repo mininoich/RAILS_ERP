@@ -1,8 +1,15 @@
 <h1>Lesson</h1>
-<p>Current subject : <%= @lesson.subject.name %></p>
-<p>Current teacher : <%= @lesson.teacher.nameTeacher %></p>
-<p>Current class : <%= @lesson.klass.name %></p>
-<p>Current room : <%= @lesson.room.name %></p>
-<p>Date/hour Start : <%= @lesson.date_hour_start %></p>
-<p>Date/hour End : <%= @lesson.date_hour_end %></p>
-<p><%= link_to "Lessons list", :action => 'index' %></p>
+<p>Subject : <%= @lesson.subject.name %></p>
+<p>Teacher : <%= @lesson.teacher.nameTeacher %></p>
+<p>Class : <%= @lesson.klass.name %></p>
+<p>Room : <%= @lesson.room.name %></p>
+<p>From : <%= @lesson.date_hour_start %></p>
+<p>To : <%= @lesson.date_hour_end %></p>
+
+
+
+<% if admin_signed_in? %>
+	<p><%= link_to "Lessons list", :action => 'index' %></p>
+<% else %>
+	<p><%= link_to "Planning", :controller => 'planning' , :action => 'index' %></p>
+<% end %>

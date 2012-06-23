@@ -4,5 +4,6 @@ class Lesson < ActiveRecord::Base
   belongs_to :room
   belongs_to :klass
   belongs_to :teacher
-  has_many :evaluation, :dependent => :delete_all #ON DELETE CASCADE  
+  has_one :event, :dependent => :delete
+  #has_many :evaluation, :dependent => :delete_all #ON DELETE CASCADE  
 end
