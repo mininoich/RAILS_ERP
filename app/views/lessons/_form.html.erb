@@ -1,11 +1,11 @@
 <%= form_for @lesson do |form| %>
 	<p>
 		<%= form.label :date_hour_start %>
-		<%= form.datetime_select :date_hour_start, :order => [:day, :month, :year, :hour, :minute]%>
+		<%= form.datetime_select :date_hour_start, :minute_step => 5, :order => [:day, :month, :year, :hour, :minute]%>
 	</p>
 	<p>
 		<%= form.label :date_hour_end %>
-		<%= form.datetime_select :date_hour_end, :order => [:day, :month, :year, :hour, :minute]%>
+		<%= form.datetime_select :date_hour_end, :minute_step => 5, :order => [:day, :month, :year, :hour, :minute]%>
 	</p>
 	<p>
 		<%= form.label :klass %>

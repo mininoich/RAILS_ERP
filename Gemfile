@@ -18,7 +18,7 @@ gem 'debugger'
 gem 'twitter-bootstrap-rails'
 gem 'simple-navigation'
 gem 'simple-navigation-bootstrap'
-
+gem 'event-calendar', :require => 'event_calendar'
 
 
 # Gems used only for assets and not required
