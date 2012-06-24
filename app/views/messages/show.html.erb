@@ -1,0 +1,6 @@
+<h1>Subject : <%= @mail.subject %></h1>
+<p><b>From : </b><%= @mail.sender.name %></p>
+<p><b>Message : </b></p>
+<p><%= @mail.body %></p>
+<p><%= link_to "Messages list", :action => 'index' %></p>
+<p>Action : <%= link_to 'Reply', :method => :reply %></p>

@@ -1,0 +1,15 @@
+<%= form_for @mail do |form| %>
+	<p>
+		<%= form.label :subject %>
+		<%= form.text_field :subject %>
+	</p>
+	<p>
+		<%= form.label :recipient %>
+		<%= form.text_field :recipient %>
+	</p>
+	<p>
+		<%= form.label :body %>
+		<%= form.text_area :body, :size => '100x5' %>
+	</p>
+	<%= form.submit %>
+<% end %>

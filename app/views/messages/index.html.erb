@@ -1,0 +1,26 @@
+<h3>Messages</h3>
+
+<table class="table table-bordered table-condensed">
+	<thead>
+			<td>From</td>
+			<td>Subject</td>
+			<td>Action</td>
+	</thead>
+<% @mails.each do |m| %>
+	<tr
+		<% if m.message_read? %>
+			<%= 'style=background-color:#CCCCCC;' %>
+		<% else %>
+			<%= 'style=background-color:#FFFFFF;' %>
+		<% end %>
+		>
+		<td><%= m.sender.name %></td>
+		<td><%= m.subject %></td>
+		<td>
+			<%= link_to "Show", m %>
+			<%= link_to 'Delete', m, :confirm => 'Are you sure ?', :method => :delete %>
+		</td>
+	</tr>
+<% end %>
+</table>
+<%= link_to "New message", :action => 'new' %>

@@ -43,6 +43,7 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :companies, 'Companies', companies_path, :if => Proc.new { admin_signed_in? }
     #primary.item :absences, 'Absences', absences_path, :if => Proc.new { admin_signed_in? }
     primary.item :planning, 'Planning', 'planning', :if => Proc.new { user_signed_in? }
+    primary.item :messages, 'Messages', messages_path, :if => Proc.new { user_signed_in? }
     
     primary.dom_class = 'nav'
     # Add an item to the primary navigation. The following params apply:

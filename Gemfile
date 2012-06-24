@@ -19,7 +19,7 @@ gem 'twitter-bootstrap-rails'
 gem 'simple-navigation'
 gem 'simple-navigation-bootstrap'
 gem 'event-calendar', :require => 'event_calendar'
-
+gem 'simple-private-messages', '0.0.0', :git => 'git://github.com/jongilbraith/simple-private-messages.git'
 
 # Gems used only for assets and not required
 # in production environments by default.

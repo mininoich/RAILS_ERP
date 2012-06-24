@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120623085836) do
+ActiveRecord::Schema.define(:version => 20120624182141) do
 
   create_table "abilities", :force => true do |t|
     t.integer  "teacher_id"
@@ -97,6 +97,18 @@ ActiveRecord::Schema.define(:version => 20120623085836) do
   add_index "lessons", ["room_id"], :name => "index_lessons_on_room_id"
   add_index "lessons", ["subject_id"], :name => "index_lessons_on_subject_id"
   add_index "lessons", ["teacher_id"], :name => "index_lessons_on_teacher_id"
+
+  create_table "messages", :force => true do |t|
+    t.integer  "sender_id"
+    t.integer  "recipient_id"
+    t.boolean  "sender_deleted",    :default => false
+    t.boolean  "recipient_deleted", :default => false
+    t.string   "subject"
+    t.text     "body"
+    t.datetime "read_at"
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
+  end
 
   create_table "rooms", :force => true do |t|
     t.string   "name"

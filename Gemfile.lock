@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/jongilbraith/simple-private-messages.git
+  revision: adf783407d924d3d94f33ec50912c65f8cdf5770
+  specs:
+    simple-private-messages (0.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -153,6 +159,7 @@ DEPENDENCIES
   sass-rails (~> 3.2.4)
   simple-navigation
   simple-navigation-bootstrap
+  simple-private-messages (= 0.0.0)!
   sqlite3 (= 1.3.5)
   therubyracer
   twitter-bootstrap-rails
